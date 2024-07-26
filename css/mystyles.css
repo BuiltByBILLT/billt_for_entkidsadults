@@ -1,0 +1,23 @@
+header .top-menu {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	display: flex;
+}
+
+header .top-menu li a {
+	color: #333;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+header .top-menu li:first-child a {
+	margin-left: 0;
+}
+header .top-menu li:last-child a {
+	margin-right: 0;
+}
+header .top-menu li a:hover {
+	color: #ff0000;
+}

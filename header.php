@@ -12,7 +12,7 @@
     <div id="wrapper" class="hfeed">
         <header id="header" role="banner">
             <nav id="menu" role="navigation">
-                Nav
+                <?php wp_nav_menu(array('theme_location' => 'main-menu', 'menu-class' => 'top-menu')); ?>
             </nav>
         </header>
         <div id="container">
