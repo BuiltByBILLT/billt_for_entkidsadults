@@ -2,6 +2,9 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	margin: 0;
+	font-size: 16px;
+	color: #555759;
 }
 h1,
 h2,
@@ -9,107 +12,126 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Poppins", sans-serif;
-	color: #102851;
+	/* font-family: "Poppins", sans-serif; */
+	/* color: #555759; */
 }
 
 /* H1 */
 h1 {
-	font-weight: bold;
-	font-size: 84px;
+	font-weight: 700; /* 700 is bold */
+	font-size: 5rem; /* 84px converted to rem */
 }
 
 /* H2 */
 h2 {
-	font-weight: 500;
-	font-size: 42px;
+	font-weight: 600; /* 600 is semi-bold */
+	font-size: 2.5rem; /* 42px converted to rem */
 }
 
 /* H2 - Subheading */
 .h2-subheading {
-	font-weight: 500;
-	font-size: 23px;
+	font-weight: 400; /* 400 is normal */
+	font-size: 1.353rem; /* 23px converted to rem */
 }
 
 /* H3 */
 h3 {
-	font-weight: 500;
-	font-size: 24px;
+	font-weight: 500; /* 500 is medium */
+	font-size: 1.412rem; /* 24px converted to rem */
 }
 
 /* H4 */
 h4 {
-	font-weight: 500;
-	font-size: 18px;
+	font-weight: 500; /* 500 is medium */
+	font-size: 1.059rem; /* 18px converted to rem */
 }
 
 /* H5 */
 h5 {
 	font-weight: 500;
-	font-size: 17px;
+	font-size: 1rem; /* 17px converted to rem */
 }
 
-/* H6 */
+/* H6  used for General Menu*/
 h6 {
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.176rem; /* 20px converted to rem */
 }
 
 /* Paragraph */
 p {
 	font-family: "Poppins", sans-serif;
 	font-weight: normal;
-	font-size: 17px;
-	color: #555759;
+	font-size: 1rem;
+	/* color: #555759; */
 }
 
-/* Basic container styles for all devices */
+/* Base container styles */
 .container {
 	width: 100%;
-	padding-right: var(--bs-gutter-x, 0.75rem);
-	padding-left: var(--bs-gutter-x, 0.75rem);
+	padding-right: 0.5rem;
+	padding-left: 0.5rem;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+/* Small devices (phones, 320px and up) */
+@media (min-width: 320px) {
 	.container {
-		max-width: 540px;
+		max-width: 100%;
 	}
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium small devices (phones, 375px and up) */
+@media (min-width: 375px) {
+	.container {
+		max-width: 360px;
+	}
+}
+
+/* Large devices (phones, 425px and up) */
+@media (min-width: 425px) {
+	.container {
+		max-width: 400px;
+	}
+}
+
+/* Tablets (768px and up) */
 @media (min-width: 768px) {
 	.container {
 		max-width: 720px;
 	}
+	html {
+		font-size: 18px;
+	}
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+/* Small desktops and large tablets (1024px and up) */
+@media (min-width: 1024px) {
 	.container {
 		max-width: 960px;
 	}
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1140px;
+	html {
+		font-size: 19px;
 	}
 }
 
-/* XXL devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* Large desktops (1440px and up) */
+@media (min-width: 1440px) {
 	.container {
-		max-width: 1320px;
+		max-width: 1360px;
+	}
+	html {
+		font-size: 20px;
 	}
 }
 
-/* XXXL devices (extra-large desktops, 1635px and up) */
+/* Extra Large desktops (1726px and up) */
 @media (min-width: 1726px) {
 	.container {
 		max-width: 1635px;
+	}
+	html {
+		font-size: 21px;
 	}
 }

@@ -1,10 +1,10 @@
 /* Base styles for the header */
 header {
 	background: transparent;
-	height: 68px;
+	height: 4rem; /* 68px converted to rem */
 	display: flex;
 	justify-content: center;
-	margin: 22px 0;
+	margin: 1.3rem 0; /* 22px converted to rem */
 }
 
 header nav {
@@ -29,7 +29,7 @@ header nav ul.top-menu {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
-	gap: 2rem;
+	gap: 1rem;
 	align-items: center;
 }
 
@@ -48,7 +48,7 @@ header nav ul.top-menu > li:first-child {
 header nav ul.top-menu li a {
 	display: block;
 	color: var(--dark-blue, #102851);
-	font-size: 20px;
+	font-size: 1rem; /* 20px converted to rem */
 	text-decoration: none;
 	text-align: center;
 	padding: 0.75rem 0; /* vertical padding for submenu*/
@@ -70,8 +70,8 @@ header nav ul.top-menu li.current-menu-parent > a {
 
 /* Special Link Styles  */
 header nav ul.top-menu > li:nth-last-child(2) {
-	padding: 7px 24px;
-	border-radius: 7px;
+	padding: 0.5rem 1rem; /* 7px 24px converted to rem */
+	border-radius: 0.4rem; /* 7px converted to rem */
 	border: 1px solid var(--OSNT, #2aa7ff);
 }
 header nav ul.top-menu > li:nth-last-child(2) > a {
@@ -80,8 +80,8 @@ header nav ul.top-menu > li:nth-last-child(2) > a {
 }
 header nav ul.top-menu > li:nth-last-child(1) {
 	background: var(--OSNT, #2aa7ff);
-	padding: 7px 24px;
-	border-radius: 7px;
+	padding: 0.5rem 1rem; /* 7px 24px converted to rem */
+	border-radius: 0.4rem; /* 7px converted to rem */
 }
 header nav ul.top-menu > li:nth-last-child(1):hover {
 	opacity: 0.8;
@@ -103,9 +103,9 @@ header nav ul.top-menu li ul.sub-menu {
 	padding: 0;
 	margin: 0;
 	left: -1rem;
-	min-width: 150px;
+	min-width: 9rem; /* 150px converted to rem */
 	border-radius: 0.5rem;
-	box-shadow: 0px 0px 25.6px 0px #0000001c;
+	box-shadow: 0px 0px 1.5rem 0px #0000001c; /* 25.6px converted to rem */
 	white-space: nowrap;
 }
 
@@ -117,7 +117,7 @@ header nav ul.top-menu li:focus-within > ul.sub-menu {
 
 /* Submenu link styles */
 header nav ul.top-menu li ul.sub-menu li a {
-	font-size: 15px;
+	font-size: 1rem; /* 15px converted to rem */
 	padding: 0.5rem 1rem;
 	text-align: left;
 }
@@ -136,19 +136,9 @@ header nav ul.top-menu .sub-menu li .sub-menu {
 	position: absolute;
 	top: 0;
 	background: white;
-	box-shadow: 0px 0px 25.6px 0px #0000001c;
+	box-shadow: 0px 0px 1.5rem 0px #0000001c; /* 25.6px converted to rem */
 	white-space: nowrap;
 	list-style-type: none;
 	padding: 0;
 	left: calc(100%);
-}
-
-/* Small Desktop  */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-	header {
-		height: 50px;
-	}
-	header nav ul.top-menu li a {
-		font-size: 15px;
-	}
 }
