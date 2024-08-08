@@ -1,0 +1,148 @@
+@import "variables";
+
+header {
+	background: transparent;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	margin: 1.3rem 0;
+	.logo {
+		img {
+			max-height: 100%;
+			width: auto;
+			border: none;
+			padding: 0;
+			margin-right: 1rem;
+		}
+	}
+	nav {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		ul.top-menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			gap: 0.5rem;
+			align-items: center;
+			> li {
+				&:first-child {
+					margin-left: auto;
+				}
+				&:nth-last-child(3) {
+					margin-right: auto;
+				}
+			}
+			li {
+				position: relative;
+				&:hover {
+					> a {
+						opacity: 0.5;
+					}
+					> ul.sub-menu {
+						display: block;
+					}
+				}
+				&:focus-within {
+					> a {
+						opacity: 0.5;
+					}
+				}
+				&.current-menu-item,
+				&.current-menu-ancestor,
+				&.current-menu-parent {
+					> a {
+						font-weight: 600;
+						text-decoration: underline;
+					}
+				}
+				> a {
+					color: $dark-blue;
+					font-size: 1rem;
+					text-decoration: none;
+					text-align: center;
+					padding: 1rem 0.75rem;
+				}
+				ul.sub-menu {
+					display: none;
+					position: absolute;
+					list-style-type: none;
+					background: white;
+					padding: 0;
+					margin: 0;
+					left: -0.25rem;
+					min-width: 9rem;
+					border-radius: 0.5rem;
+					box-shadow: 0px 0px 1.5rem 0px $box-shadow;
+					white-space: nowrap;
+					li {
+						position: static;
+						a {
+							font-size: 0.8rem;
+							padding: 0.25rem 1rem;
+							text-align: left;
+						}
+						&.menu-item-has-children {
+							ul.sub-menu {
+								top: 0;
+								left: 100%;
+							}
+						}
+					}
+				}
+			}
+			// special styles for header buttons
+			> li {
+				&:nth-last-child(2) {
+					padding: 0.5rem 1rem;
+					border-radius: 0.4rem;
+					border: 1px solid $light-blue;
+					> a {
+						color: $light-blue;
+						padding: 0;
+					}
+					&.current-menu-item {
+						> a {
+							font-weight: 400;
+							text-decoration: none;
+						}
+					}
+				}
+				&:nth-last-child(1) {
+					background: $light-blue;
+					padding: 0.5rem 1rem;
+					border-radius: 0.4rem;
+					&:hover {
+						opacity: 0.8;
+						> a {
+							opacity: 1;
+						}
+					}
+					> a {
+						color: $white;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+	header {
+		nav {
+			ul.top-menu {
+				> li {
+					&:nth-last-child(2) {
+						display: none;
+					}
+					&:first-child {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
