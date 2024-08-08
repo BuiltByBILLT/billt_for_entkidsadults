@@ -43,37 +43,6 @@
 	color: #777;
 }
 
-/* Custom heading styles */
-h1 {
-	font-size: 2.5em;
-	margin: 0.5em 0;
-	color: #333;
-}
-
-h2 {
-	font-size: 2em;
-	margin: 0.75em 0;
-	color: #444;
-}
-
-/* Custom paragraph styles */
-p {
-	margin: 1.5em 0;
-	line-height: 1.6;
-	color: #555;
-}
-
-/* Custom list styles */
-ul,
-ol {
-	margin: 1.5em 0;
-	padding-left: 50px;
-}
-
-li {
-	margin: 0.5em 0;
-}
-
 /* Custom blockquote styles */
 blockquote {
 	margin: 1em 40px;
@@ -82,13 +51,4 @@ blockquote {
 	color: #333;
 	font-style: italic;
 	background: #f9f9f9;
-}
-
-/* Custom image styles */
-img {
-	max-width: 100%;
-	height: auto;
-	border: 1px solid #ddd;
-	padding: 5px;
-	background: #fff;
 }

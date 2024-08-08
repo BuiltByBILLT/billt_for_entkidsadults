@@ -1,23 +1,115 @@
-header .top-menu {
-	background-color: #f8f8f8;
-	border-bottom: 1px solid #e7e7e7;
-	padding: 10px 0;
-	margin-bottom: 20px;
-	display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", sans-serif;
+	color: #102851;
 }
 
-header .top-menu li a {
-	color: #333;
-	font-size: 14px;
+/* H1 */
+h1 {
+	font-weight: bold;
+	font-size: 84px;
+}
+
+/* H2 */
+h2 {
+	font-weight: 500;
+	font-size: 42px;
+}
+
+/* H2 - Subheading */
+.h2-subheading {
+	font-weight: 500;
+	font-size: 23px;
+}
+
+/* H3 */
+h3 {
+	font-weight: 500;
+	font-size: 24px;
+}
+
+/* H4 */
+h4 {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+/* H5 */
+h5 {
+	font-weight: 500;
+	font-size: 17px;
+}
+
+/* H6 */
+h6 {
 	font-weight: 600;
-	text-transform: uppercase;
+	font-size: 16px;
 }
-header .top-menu li:first-child a {
-	margin-left: 0;
+
+/* Paragraph */
+p {
+	font-family: "Poppins", sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	color: #555759;
 }
-header .top-menu li:last-child a {
-	margin-right: 0;
+
+/* Basic container styles for all devices */
+.container {
+	width: 100%;
+	padding-right: var(--bs-gutter-x, 0.75rem);
+	padding-left: var(--bs-gutter-x, 0.75rem);
+	margin-right: auto;
+	margin-left: auto;
 }
-header .top-menu li a:hover {
-	color: #ff0000;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+/* XXL devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+
+/* XXXL devices (extra-large desktops, 1635px and up) */
+@media (min-width: 1726px) {
+	.container {
+		max-width: 1635px;
+	}
 }
