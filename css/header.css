@@ -11,6 +11,7 @@ header .logo img {
   border: none;
   padding: 0;
   margin-right: 1rem;
+  padding: 0.25rem;
 }
 header nav {
   flex-grow: 1;
@@ -38,6 +39,7 @@ header nav ul.top-menu > li:nth-last-child(3) {
 }
 header nav ul.top-menu li {
   position: relative;
+  cursor: pointer;
 }
 header nav ul.top-menu li:hover > a {
   opacity: 0.5;
