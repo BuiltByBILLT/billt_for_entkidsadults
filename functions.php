@@ -24,6 +24,10 @@ function load_js()
     // Changes urls to relative when in development
     wp_register_script('adjust-links', get_template_directory_uri() . '/js/adjust-links.js', array(), false, true);
     wp_enqueue_script('adjust-links');
+
+    // Transparent Header
+    wp_register_script('transparent-header', get_template_directory_uri() . '/js/transparent-header.js', array(), false, true);
+    wp_enqueue_script('transparent-header');
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
