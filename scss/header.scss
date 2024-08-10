@@ -1,11 +1,11 @@
 @import "variables";
 
 .header-spacer {
-	height: 6rem;
+	height: $header-height;
 }
 header {
 	background: transparent;
-	height: 6rem;
+	height: $header-height;
 	box-sizing: content-box;
 	position: fixed;
 	top: 0;

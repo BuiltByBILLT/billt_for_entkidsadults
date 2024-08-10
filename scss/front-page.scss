@@ -1,5 +1,9 @@
+@import "variables";
+
 .hero {
 	background-image: url("../assets/images/hero-background.png");
 	background-size: cover;
 	background-position: center;
+	margin-top: -$header-height;
+	padding-top: $header-height;
 }
