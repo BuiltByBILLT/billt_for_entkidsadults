@@ -1,3 +1,51 @@
+.color-grey {
+  color: #555759;
+}
+
+.color-dark-blue {
+  color: #102851;
+}
+
+.color-light-blue {
+  color: #2aa7ff;
+}
+
+.color-white {
+  color: white;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.primary-button {
+  background: #2aa7ff;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #2aa7ff;
+  text-decoration: none;
+}
+.primary-button:hover {
+  opacity: 0.8;
+}
+
+.outline-button {
+  color: #2aa7ff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #2aa7ff;
+  text-decoration: none;
+}
+.outline-button:hover {
+  opacity: 0.8;
+}
+
 .header-spacer {
   height: 6rem;
 }
@@ -7,6 +55,7 @@ header {
   height: 6rem;
   box-sizing: content-box;
   position: fixed;
+  z-index: 999;
   top: 0;
   width: 100%;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;

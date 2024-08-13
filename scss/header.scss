@@ -8,6 +8,7 @@ header {
 	height: $header-height;
 	box-sizing: content-box;
 	position: fixed;
+	z-index: 999;
 	top: 0;
 	width: 100%;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;

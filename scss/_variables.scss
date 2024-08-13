@@ -1,5 +1,50 @@
 $dark-blue: #102851;
 $light-blue: #2aa7ff;
 $white: white;
+$grey: #555759;
 $box-shadow: #0000001c;
 $header-height: 6rem;
+
+.color-grey {
+	color: $grey;
+}
+.color-dark-blue {
+	color: $dark-blue;
+}
+.color-light-blue {
+	color: $light-blue;
+}
+.color-white {
+	color: $white;
+}
+
+button {
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.primary-button {
+	background: $light-blue;
+	font-size: 1rem;
+	color: $white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.4rem;
+	border: 1px solid $light-blue;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.outline-button {
+	color: $light-blue;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.5rem 1rem;
+	border-radius: 0.4rem;
+	border: 1px solid $light-blue;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.8;
+	}
+}
