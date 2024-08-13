@@ -18,7 +18,8 @@ body {
 /* H1 */
 h1 {
 	font-weight: 700; /* 700 is bold */
-	font-size: 5rem; /* 84px converted to rem */
+	font-size: 4rem; /* 84px converted to rem */
+	line-height: 1.2;
 }
 
 /* H2 */
@@ -68,11 +69,11 @@ p {
 /* Base container styles */
 .container {
 	width: 100%;
+	box-sizing: content-box;
 	padding-right: 0.5rem;
 	padding-left: 0.5rem;
 	margin-right: auto;
 	margin-left: auto;
-	box-sizing: content-box;
 }
 
 /* Small devices (phones, 320px and up) */
@@ -114,6 +115,9 @@ p {
 	html {
 		font-size: 19px;
 	}
+	h1 {
+		font-size: 2.5rem;
+	}
 }
 
 /* Large desktops (1440px and up) */
@@ -123,6 +127,27 @@ p {
 	}
 	html {
 		font-size: 20px;
+	}
+	h1 {
+		font-size: 4rem; /* 84px converted to rem */
+	}
+	h2 {
+		font-size: 2.5rem; /* 42px converted to rem */
+	}
+	.h2-subheading {
+		font-size: 1.353rem; /* 23px converted to rem */
+	}
+	h3 {
+		font-size: 1.412rem; /* 24px converted to rem */
+	}
+	h4 {
+		font-size: 1.059rem; /* 18px converted to rem */
+	}
+	h5 {
+		font-size: 1rem; /* 17px converted to rem */
+	}
+	h6 {
+		font-size: 1.176rem; /* 20px converted to rem */
 	}
 }
 
@@ -134,4 +159,53 @@ p {
 	html {
 		font-size: 21px;
 	}
+}
+
+/* Row */
+.row {
+	display: flex;
+	flex-wrap: wrap; /* Allows columns to wrap onto the next line if they exceed the row width */
+}
+
+/* Column */
+.col {
+	flex: 1; /* Equal width columns */
+}
+
+/* Specific column widths */
+.col-1 {
+	flex: 0 0 8.33%;
+}
+.col-2 {
+	flex: 0 0 16.66%;
+}
+.col-3 {
+	flex: 0 0 25%;
+}
+.col-4 {
+	flex: 0 0 33.33%;
+}
+.col-5 {
+	flex: 0 0 41.66%;
+}
+.col-6 {
+	flex: 0 0 50%;
+}
+.col-7 {
+	flex: 0 0 58.33%;
+}
+.col-8 {
+	flex: 0 0 66.66%;
+}
+.col-9 {
+	flex: 0 0 75%;
+}
+.col-10 {
+	flex: 0 0 83.33%;
+}
+.col-11 {
+	flex: 0 0 91.66%;
+}
+.col-12 {
+	flex: 0 0 100%;
 }

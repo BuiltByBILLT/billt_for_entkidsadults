@@ -4,6 +4,24 @@
   background-position: center;
   margin-top: -6rem;
   padding-top: 6rem;
+  position: relative;
+  height: clamp(700px, 50vw, 900px);
+}
+.hero .container {
+  padding-top: 2rem;
+}
+.hero .container .col {
+  padding-right: calc(5vw + 1rem);
+}
+.hero img {
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  height: calc(100% - 6rem);
+  width: 50%;
+  object-fit: cover;
+  object-position: 40% center;
+  max-width: 900px;
 }
 
 /*# sourceMappingURL=front-page.css.map */

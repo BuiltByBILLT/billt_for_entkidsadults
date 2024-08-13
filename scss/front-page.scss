@@ -6,4 +6,24 @@
 	background-position: center;
 	margin-top: -$header-height;
 	padding-top: $header-height;
+	position: relative;
+	height: clamp(700px, 50vw, 900px);
+
+	.container {
+		padding-top: 2rem;
+
+		.col {
+			padding-right: calc(5vw + 1rem);
+		}
+	}
+	img {
+		position: absolute;
+		top: $header-height;
+		left: 50%;
+		height: calc(100% - #{$header-height});
+		width: 50%;
+		object-fit: cover;
+		object-position: 40% center;
+		max-width: 900px;
+	}
 }
