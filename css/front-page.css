@@ -184,4 +184,63 @@ button {
   margin: 0 20px;
 }
 
+.why-us-section {
+  text-align: center;
+  padding: 50px 0;
+}
+.why-us-section h2 {
+  color: #102851;
+  margin-bottom: 3rem;
+}
+.why-us-section h2.subheading {
+  color: #2aa7ff;
+  margin-bottom: 0px;
+}
+.why-us-section h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.why-us-section .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.why-us-section .cards .card {
+  flex: 1;
+  min-width: 220px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.why-us-section .cards .card .icon {
+  margin-bottom: 20px;
+}
+.why-us-section .cards .card h3 {
+  margin-bottom: 10px;
+  color: #102851;
+}
+.why-us-section .cards .card p {
+  color: #555759;
+}
+.why-us-section .cards .card:hover {
+  background-color: #2aa7ff;
+  color: #ffffff;
+}
+.why-us-section .cards .card:hover h3,
+.why-us-section .cards .card:hover p {
+  color: #ffffff;
+}
+.why-us-section .cards .card.active {
+  background-color: #2aa7ff;
+  color: #ffffff;
+}
+.why-us-section .cards .card.active h3,
+.why-us-section .cards .card.active p {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=front-page.css.map */

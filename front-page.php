@@ -8,11 +8,12 @@
         <?php
         include(get_template_directory() . '/template-parts/learn-more-section.php');
         ?>
+        <?php
+        include(get_template_directory() . '/template-parts/why-us-section.php');
+        ?>
 
 
-        <section class="about-us-cards">
 
-        </section>
         <section class="announcements">
 
         </section>
