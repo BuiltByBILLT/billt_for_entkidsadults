@@ -243,4 +243,30 @@ button {
   color: #ffffff;
 }
 
+.announcements-section {
+  background-color: #102851;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.announcements-section h2.subheading {
+  color: #2aa7ff;
+  margin-bottom: 10px;
+}
+.announcements-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+.announcements-section .announcement-content {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.announcements-section .announcement-content .read-more {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
 /*# sourceMappingURL=front-page.css.map */

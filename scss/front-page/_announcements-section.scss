@@ -1,0 +1,29 @@
+.announcements-section {
+	background-color: $dark-blue;
+	padding: 2rem 4rem;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+
+	h2.subheading {
+		color: $light-blue;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	.announcement-content {
+		margin-bottom: 20px;
+		line-height: 1.6;
+
+		.read-more {
+			color: $white;
+			text-decoration: underline;
+			font-weight: 500;
+			margin-left: 0.5rem;
+		}
+	}
+}

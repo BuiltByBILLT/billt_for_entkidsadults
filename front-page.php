@@ -11,12 +11,12 @@
         <?php
         include(get_template_directory() . '/template-parts/why-us-section.php');
         ?>
+        <?php
+        include(get_template_directory() . '/template-parts/announcements-section.php');
+        ?>
 
 
 
-        <section class="announcements">
-
-        </section>
         <section class="our-team-cards">
 
         </section>
