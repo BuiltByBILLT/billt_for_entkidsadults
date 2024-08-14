@@ -1,0 +1,79 @@
+.our-team-section {
+	// text-align: center;
+	padding: 50px 0;
+
+	h2.subheading {
+		color: $light-blue;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	h2 {
+		color: $dark-blue;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.team-cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.team-card {
+			// width: 25%;
+			// min-width: 300px;
+			width: 340px;
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			// justify-content: space-between;
+			align-items: center;
+
+			background-color: #ffffff;
+			border-radius: 15px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			text-decoration: none;
+			cursor: pointer;
+
+			// border: 1px solid grey;
+			&:hover {
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+				transform: translateY(-5px);
+
+				.learn-more {
+					text-decoration: underline;
+				}
+			}
+
+			.card-img {
+				background-image: url("../assets/images/blue-dome-bg.png");
+				background-position: center top;
+				background-size: contain;
+				background-repeat: no-repeat;
+				padding: 1rem 1rem 0;
+				img {
+					width: 100%;
+					display: block;
+					// border: 1px solid red;
+				}
+			}
+
+			h4 {
+				margin-top: 20px;
+				color: $dark-blue;
+				margin-bottom: 0.5rem;
+			}
+
+			p {
+				color: $grey;
+				padding: 0 1rem;
+				text-align: center;
+				&.learn-more {
+					padding-top: 0.5rem;
+					color: $light-blue;
+					margin-top: auto;
+				}
+			}
+		}
+	}
+}

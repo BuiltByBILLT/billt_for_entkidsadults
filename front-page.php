@@ -14,6 +14,9 @@
         <?php
         include(get_template_directory() . '/template-parts/announcements-section.php');
         ?>
+        <?php
+        include(get_template_directory() . '/template-parts/our-team-section.php');
+        ?>
 
 
 

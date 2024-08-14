@@ -269,4 +269,68 @@ button {
   margin-left: 0.5rem;
 }
 
+.our-team-section {
+  padding: 50px 0;
+}
+.our-team-section h2.subheading {
+  color: #2aa7ff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.our-team-section h2 {
+  color: #102851;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.our-team-section .team-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our-team-section .team-cards .team-card {
+  width: 340px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.our-team-section .team-cards .team-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+.our-team-section .team-cards .team-card:hover .learn-more {
+  text-decoration: underline;
+}
+.our-team-section .team-cards .team-card .card-img {
+  background-image: url("../assets/images/blue-dome-bg.png");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1rem 1rem 0;
+}
+.our-team-section .team-cards .team-card .card-img img {
+  width: 100%;
+  display: block;
+}
+.our-team-section .team-cards .team-card h4 {
+  margin-top: 20px;
+  color: #102851;
+  margin-bottom: 0.5rem;
+}
+.our-team-section .team-cards .team-card p {
+  color: #555759;
+  padding: 0 1rem;
+  text-align: center;
+}
+.our-team-section .team-cards .team-card p.learn-more {
+  padding-top: 0.5rem;
+  color: #2aa7ff;
+  margin-top: auto;
+}
+
 /*# sourceMappingURL=front-page.css.map */
