@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col left-col">
-                <h1 class="color-dark-blue">Expert Care For Your <span class="color-light-blue">Ear</span>, <span class="color-light-blue">Nose</span> & <span class="color-light-blue">Throat</span> Health</h1>
+                <h1>Expert Care For Your <span>Ear</span>, <span>Nose</span> & <span>Throat</span> Health</h1>
                 <div class="text">
                     <p>Otolaryngology Specialists of North Texas are committed to providing outstanding service to our patients and referring physicians.</p>
                     <p>Our practice goal is to improve the health and well-being of our patients and the communities we serve.</p>

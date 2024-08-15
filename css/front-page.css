@@ -55,6 +55,12 @@ button {
   justify-content: space-between;
   gap: 2rem;
 }
+.hero .container > .row .col.left-col h1 {
+  color: #102851;
+}
+.hero .container > .row .col.left-col h1 span {
+  color: #2aa7ff;
+}
 .hero .container > .row .col.left-col .text p:first-child {
   margin-bottom: 0.5rem;
 }
