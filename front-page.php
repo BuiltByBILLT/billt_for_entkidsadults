@@ -17,18 +17,19 @@
         <?php
         include(get_template_directory() . '/template-parts/our-team-section.php');
         ?>
+        <div class="row">
+            <div class="col">
+                <?php
+                include(get_template_directory() . '/template-parts/book-now-section.php');
+                ?>
+            </div>
+            <div class="col">
+                <?php
+                include(get_template_directory() . '/template-parts/our-offices-section.php');
+                ?>
+            </div>
+        </div>
 
-
-
-        <section class="our-team-cards">
-
-        </section>
-        <section class="book-now">
-
-        </section>
-        <section class="our-offices">
-
-        </section>
     </div>
 </main>
 <?php get_footer(); ?>
