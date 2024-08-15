@@ -11,7 +11,7 @@
 
 	h2 {
 		color: white;
-		margin-bottom: 20px;
+		margin-bottom: 1.5rem;
 	}
 
 	.announcement-content {
@@ -23,6 +23,12 @@
 			text-decoration: underline;
 			font-weight: 500;
 			margin-left: 0.5rem;
+			&:hover {
+				color: $light-blue;
+			}
 		}
+	}
+	.buttons {
+		margin-top: 2rem;
 	}
 }

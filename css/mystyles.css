@@ -1,51 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-.color-grey {
-	color: #555759;
-}
-
-.color-dark-blue {
-	color: #102851;
-}
-
-.color-light-blue {
-	color: #2aa7ff;
-}
-
-.color-white {
-	color: white;
-}
-
-button {
-	font-family: "Poppins", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-}
-
-.primary-button {
-	background: #2aa7ff;
-	font-size: 1rem;
-	color: white;
-	padding: 0.5rem 1rem;
-	border-radius: 0.4rem;
-	border: 1px solid #2aa7ff;
-	text-decoration: none;
-}
-.primary-button:hover {
-	opacity: 0.8;
-}
-
-.outline-button {
-	color: #2aa7ff;
-	font-size: 1rem;
-	font-weight: 400;
-	padding: 0.5rem 1rem;
-	border-radius: 0.4rem;
-	border: 1px solid #2aa7ff;
-	text-decoration: none;
-}
-.outline-button:hover {
-	opacity: 0.8;
-}
 
 *,
 *::before,
@@ -76,13 +29,18 @@ h2 {
 	font-weight: 600; /* 600 is semi-bold */
 	font-size: 2.5rem; /* 42px converted to rem */
 	line-height: 1.2;
-	margin-bottom: 2rem;
+}
+
+/* H2 - Subheading */
+.h2-subheading {
+	font-weight: 400; /* 400 is normal */
+	font-size: 1.353rem; /* 23px converted to rem */
 }
 
 /* H3 */
 h3 {
 	font-weight: 500; /* 500 is medium */
-	font-size: 1.412rem; /* 24px converted to rem */
+	font-size: 1.3rem; /* 24px converted to rem */
 }
 
 /* H4 */
@@ -91,12 +49,12 @@ h4 {
 	font-size: 1.059rem; /* 18px converted to rem */
 }
 
-/* H5  Originally H2.subheading */
+/* H5 */
 h5 {
 	font-weight: 400; /* 400 is normal */
-	font-size: 1.3rem; /* 23px converted to rem */
-	margin-bottom: 0rem;
+	font-size: 1.353rem; /* 23px converted to rem */
 	color: #2aa7ff;
+	line-height: 1.2;
 }
 
 /* H6  used for General Menu*/
@@ -168,7 +126,7 @@ p {
 		max-width: 1360px;
 	}
 	html {
-		font-size: 17px;
+		font-size: 18px;
 	}
 	h1 {
 		font-size: 3.5rem;
@@ -178,6 +136,9 @@ p {
 @media (min-width: 1726px) {
 	.container {
 		max-width: 1635px;
+	}
+	html {
+		font-size: 20px;
 	}
 	h1 {
 		font-size: 4rem;
@@ -192,55 +153,6 @@ p {
 /* Column */
 .col {
 	flex: 1; /* Equal width columns */
-}
-
-/* Specific column widths */
-.col-1 {
-	flex: 0 0 8.33%;
-}
-
-.col-2 {
-	flex: 0 0 16.66%;
-}
-
-.col-3 {
-	flex: 0 0 25%;
-}
-
-.col-4 {
-	flex: 0 0 33.33%;
-}
-
-.col-5 {
-	flex: 0 0 41.66%;
-}
-
-.col-6 {
-	flex: 0 0 50%;
-}
-
-.col-7 {
-	flex: 0 0 58.33%;
-}
-
-.col-8 {
-	flex: 0 0 66.66%;
-}
-
-.col-9 {
-	flex: 0 0 75%;
-}
-
-.col-10 {
-	flex: 0 0 83.33%;
-}
-
-.col-11 {
-	flex: 0 0 91.66%;
-}
-
-.col-12 {
-	flex: 0 0 100%;
 }
 
 /*# sourceMappingURL=mystyles.css.map */

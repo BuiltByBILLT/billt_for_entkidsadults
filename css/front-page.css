@@ -1,19 +1,3 @@
-.color-grey {
-  color: #555759;
-}
-
-.color-dark-blue {
-  color: #102851;
-}
-
-.color-light-blue {
-  color: #2aa7ff;
-}
-
-.color-white {
-  color: white;
-}
-
 button {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
@@ -31,6 +15,7 @@ button {
 }
 .primary-button:hover {
   opacity: 0.8;
+  color: white;
 }
 
 .outline-button {
@@ -83,6 +68,7 @@ button {
   position: static;
   height: 4rem;
   width: auto;
+  margin-right: 1rem;
 }
 .hero img {
   position: absolute;
@@ -250,7 +236,7 @@ button {
 }
 .announcements-section h2 {
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 .announcements-section .announcement-content {
   margin-bottom: 20px;
@@ -261,6 +247,12 @@ button {
   text-decoration: underline;
   font-weight: 500;
   margin-left: 0.5rem;
+}
+.announcements-section .announcement-content .read-more:hover {
+  color: #2aa7ff;
+}
+.announcements-section .buttons {
+  margin-top: 2rem;
 }
 
 .our-team-section {
@@ -287,7 +279,7 @@ button {
   align-items: center;
   background-color: #ffffff;
   border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
   text-decoration: none;
   cursor: pointer;
 }
@@ -417,16 +409,21 @@ button {
   z-index: 1; /* Ensure the overlay is above the background but below the content */
 }
 .book-now-section .content {
-  padding: 3rem 1rem;
-  max-width: 575px;
+  padding: 3rem 2rem;
+  max-width: 600px;
   margin: auto;
   text-align: center;
   position: relative;
   z-index: 5;
 }
+@media screen and (min-width: 1440px) {
+  .book-now-section .content {
+    padding: 3rem 1rem;
+  }
+}
 .book-now-section .content h2 {
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .book-now-section .content p {
   margin-bottom: 1.5rem;
