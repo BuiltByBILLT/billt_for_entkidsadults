@@ -5,7 +5,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stock-2.png" alt="Doctor with headlamp" class="img-bottom">
         </div>
         <div class="col learn-more-content">
-            <h2 class="subheading">Learn More About</h2>
+            <h5>Learn More About</h5>
             <h2>Otolaryngology Specialists of North Texas</h2>
             <p>
                 Dr. Greg Rohn, Dr. Brad Gamble, and Dr. Michael Kubala of Otolaryngology Specialists of North Texas (OSNT),

@@ -122,7 +122,12 @@ button {
   position: absolute;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 70%;
+  width: 90%;
+}
+@media screen and (min-width: 1440px) {
+  .learn-more-section .learn-more-images img {
+    width: 80%;
+  }
 }
 .learn-more-section .learn-more-images img.img-top {
   top: 0;
@@ -131,7 +136,6 @@ button {
 .learn-more-section .learn-more-images img.img-bottom {
   bottom: 0;
   left: 0;
-  transform: translateX(-10%);
 }
 .learn-more-section .learn-more-content {
   padding-left: 3rem;
@@ -140,11 +144,6 @@ button {
 .learn-more-section .learn-more-content h2 {
   margin-bottom: 20px;
   color: #102851;
-  line-height: 1.3;
-}
-.learn-more-section .learn-more-content h2.subheading {
-  color: #2aa7ff;
-  margin-bottom: 5px;
 }
 .learn-more-section .learn-more-content > p {
   line-height: 1.6;
@@ -191,10 +190,6 @@ button {
 .why-us-section h2 {
   color: #102851;
   margin-bottom: 3rem;
-}
-.why-us-section h2.subheading {
-  color: #2aa7ff;
-  margin-bottom: 0px;
 }
 .why-us-section h1 {
   font-size: 28px;
@@ -250,9 +245,8 @@ button {
   text-align: center;
   color: white;
 }
-.announcements-section h2.subheading {
+.announcements-section h5 {
   color: #2aa7ff;
-  margin-bottom: 10px;
 }
 .announcements-section h2 {
   color: white;
@@ -272,9 +266,7 @@ button {
 .our-team-section {
   padding: 50px 0;
 }
-.our-team-section h2.subheading {
-  color: #2aa7ff;
-  margin-bottom: 10px;
+.our-team-section h5 {
   text-align: center;
 }
 .our-team-section h2 {
@@ -334,16 +326,11 @@ button {
 }
 
 .our-offices-section {
-  padding: 0 2rem;
+  padding: 0 0 1rem 2rem;
   color: #102851;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-.our-offices-section h2.subheading {
-  color: #2aa7ff;
-  margin-bottom: 0rem;
+  height: 100%;
 }
 .our-offices-section h2 {
   color: #102851;
@@ -352,12 +339,23 @@ button {
 .our-offices-section .office {
   display: flex;
   align-items: center;
+  flex-grow: 1;
+}
+.our-offices-section .office:last-child {
+  margin-top: 1rem;
 }
 .our-offices-section .office .map {
   margin-right: 20px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+.our-offices-section .office .map img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .our-offices-section .office .details {
   display: flex;
@@ -366,11 +364,28 @@ button {
 }
 .our-offices-section .office .details p {
   margin: 0;
+  display: flex;
+  align-items: start;
   color: #555759;
 }
 .our-offices-section .office .details p .icon {
   margin-right: 10px;
-  color: #2aa7ff;
+  margin-top: 3px;
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+.our-offices-section .office .details p.phone .icon {
+  background-image: url("../assets/images/icon-phone.png");
+}
+.our-offices-section .office .details p.email .icon {
+  background-image: url("../assets/images/icon-mail.png");
+}
+.our-offices-section .office .details p.address .icon {
+  background-image: url("../assets/images/icon-pin.png");
 }
 .our-offices-section .office .details h4 {
   color: #102851;
@@ -384,6 +399,10 @@ button {
   color: white;
   position: relative;
   box-shadow: 0px 0px 1.5rem 0px rgba(0, 0, 0, 0.1098039216);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .book-now-section::before {
   content: "";
@@ -404,10 +423,6 @@ button {
   text-align: center;
   position: relative;
   z-index: 5;
-}
-.book-now-section .content h2.subheading {
-  color: #2aa7ff;
-  margin-bottom: 0rem;
 }
 .book-now-section .content h2 {
   color: white;

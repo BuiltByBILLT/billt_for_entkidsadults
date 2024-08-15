@@ -75,12 +75,8 @@ h1 {
 h2 {
 	font-weight: 600; /* 600 is semi-bold */
 	font-size: 2.5rem; /* 42px converted to rem */
-}
-
-/* H2 - Subheading */
-h2.subheading {
-	font-weight: 400; /* 400 is normal */
-	font-size: 1.3rem; /* 23px converted to rem */
+	line-height: 1.2;
+	margin-bottom: 2rem;
 }
 
 /* H3 */
@@ -95,10 +91,12 @@ h4 {
 	font-size: 1.059rem; /* 18px converted to rem */
 }
 
-/* H5 */
+/* H5  Originally H2.subheading */
 h5 {
-	font-weight: 500;
-	font-size: 1rem; /* 17px converted to rem */
+	font-weight: 400; /* 400 is normal */
+	font-size: 1.3rem; /* 23px converted to rem */
+	margin-bottom: 0rem;
+	color: #2aa7ff;
 }
 
 /* H6  used for General Menu*/

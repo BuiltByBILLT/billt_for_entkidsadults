@@ -1,5 +1,5 @@
 <section class="announcements-section">
-    <h2 class="subheading">Announcements</h2>
+    <h5>Announcements</h5>
     <h2>Latest Updates</h2>
     <div class="announcement-content">
         <?php

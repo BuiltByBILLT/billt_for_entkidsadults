@@ -1,5 +1,5 @@
 <section class="our-team-section">
-    <h2 class="subheading">Our Team</h2>
+    <h5>Our Team</h5>
     <h2>Meet Our Medical Specialist</h2>
     <div class="team-cards">
         <a href="/dr-michael-kubala" class="team-card">

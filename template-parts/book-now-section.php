@@ -1,6 +1,6 @@
 <section class="book-now-section">
     <div class="content">
-        <h2 class="subheading">Schedule Now</h2>
+        <h5>Schedule Now</h5>
         <h2>Book An Appointment</h2>
         <p>Schedule your appointment by completing the form below. We’ll confirm your visit shortly.</p>
         <form action="/book-appointment" method="POST">

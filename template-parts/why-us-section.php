@@ -1,5 +1,5 @@
 <section class="why-us-section">
-    <h2 class="subheading">Why Us!</h2>
+    <h5>Why Us!</h5>
     <h2>Why We're Your Best Choice for ENT Care</h2>
     <div class="cards">
         <div class="card">
