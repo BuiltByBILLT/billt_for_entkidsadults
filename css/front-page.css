@@ -451,4 +451,56 @@ button {
   align-self: center;
 }
 
+.faq-section {
+  margin-top: 6rem;
+}
+.faq-section h5 {
+  text-align: center;
+}
+.faq-section h2 {
+  color: #102851;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.faq-section .faq-container .faq-item {
+  padding: 0 5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.faq-section .faq-container .faq-item .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+.faq-section .faq-container .faq-item .faq-question h3 {
+  margin: 0;
+  color: #102851;
+  font-size: 1.2rem;
+}
+.faq-section .faq-container .faq-item .faq-question .faq-icon {
+  font-size: 1.5rem;
+  color: #102851;
+}
+.faq-section .faq-container .faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.faq-section .faq-container .faq-item .faq-answer p {
+  margin: 0;
+  color: #555759;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.faq-section .faq-container .faq-item.active .faq-answer {
+  max-height: 200px; /* Adjust this value based on the typical content height */
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=front-page.css.map */

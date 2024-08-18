@@ -29,7 +29,9 @@
                 ?>
             </div>
         </div>
-
+        <?php
+        include(get_template_directory() . '/template-parts/faq-section.php');
+        ?>
     </div>
 </main>
 <?php get_footer(); ?>

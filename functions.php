@@ -28,6 +28,10 @@ function load_js()
     // Transparent Header
     wp_register_script('transparent-header', get_template_directory_uri() . '/js/transparent-header.js', array(), false, true);
     wp_enqueue_script('transparent-header');
+
+    // FAQ accordion
+    wp_register_script('faq-accordian', get_template_directory_uri() . '/js/faq-accordian.js', array(), false, true);
+    wp_enqueue_script('faq-accordian');
 }
 add_action('wp_enqueue_scripts', 'load_js');
 
