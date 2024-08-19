@@ -19,6 +19,8 @@ function load_css()
     wp_enqueue_style('front-page');
     wp_register_style('page', get_template_directory_uri() . '/css/page.css', array(), false, 'all');
     wp_enqueue_style('page');
+    wp_register_style('teammate', get_template_directory_uri() . '/css/teammate.css', array(), false, 'all');
+    wp_enqueue_style('teammate');
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
