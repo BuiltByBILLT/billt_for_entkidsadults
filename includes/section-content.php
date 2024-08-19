@@ -2,7 +2,7 @@
 if (have_posts()) :
     while (have_posts()) : the_post();
 ?>
-        <h3><?php the_title(); ?></h3>
+        <h1 class="page-title"><?php the_title(); ?></h1>
         <div><?php the_content(); ?></div>
 <?php endwhile;
 else :

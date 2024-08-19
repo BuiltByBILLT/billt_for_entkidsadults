@@ -1,0 +1,49 @@
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.primary-button {
+  background: #2aa7ff;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #2aa7ff;
+  text-decoration: none;
+}
+.primary-button:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+.outline-button {
+  color: #2aa7ff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #2aa7ff;
+  text-decoration: none;
+}
+.outline-button:hover {
+  opacity: 0.8;
+}
+
+.page-page {
+  min-height: max(600px, 75vh);
+  margin-bottom: 5rem;
+}
+.page-page h1.page-title {
+  text-align: center;
+  background-color: #102851;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+.page-page p {
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=page.css.map */

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "variables";
-
 *,
 *::before,
 *::after {
@@ -12,9 +11,21 @@
 html {
 	font-size: 16px;
 }
+
 body {
 	font-family: "Poppins", sans-serif;
 	color: $grey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0.1rem;
+	margin-bottom: 0.5rem;
+	color: $dark-blue;
 }
 
 /* H1 */
@@ -28,6 +39,8 @@ h1 {
 h2 {
 	font-weight: 600; /* 600 is semi-bold */
 	font-size: 2.5rem; /* 42px converted to rem */
+	line-height: 1.2;
+	margin-bottom: 1rem;
 }
 
 /* H2 - Subheading */
@@ -39,7 +52,7 @@ h2 {
 /* H3 */
 h3 {
 	font-weight: 500; /* 500 is medium */
-	font-size: 1.412rem; /* 24px converted to rem */
+	font-size: 1.3rem; /* 24px converted to rem */
 }
 
 /* H4 */
@@ -50,8 +63,10 @@ h4 {
 
 /* H5 */
 h5 {
-	font-weight: 500;
-	font-size: 1rem; /* 17px converted to rem */
+	font-weight: 400; /* 400 is normal */
+	font-size: 1.353rem; /* 23px converted to rem */
+	color: $light-blue;
+	line-height: 1.2;
 }
 
 /* H6  used for General Menu*/
@@ -84,21 +99,18 @@ p {
 		max-width: 100%;
 	}
 }
-
 /* Medium small devices (phones, 375px and up) */
 @media (min-width: 375px) {
 	.container {
 		max-width: 360px;
 	}
 }
-
 /* Large devices (phones, 425px and up) */
 @media (min-width: 425px) {
 	.container {
 		max-width: 400px;
 	}
 }
-
 /* Tablets (768px and up) */
 @media (min-width: 768px) {
 	.container {
@@ -108,7 +120,6 @@ p {
 		font-size: 18px;
 	}
 }
-
 /* Small desktops and large tablets (1024px and up) */
 @media (min-width: 1024px) {
 	.container {
@@ -121,33 +132,30 @@ p {
 		font-size: 3rem;
 	}
 }
-
 /* Large desktops (1440px and up) */
 @media (min-width: 1440px) {
 	.container {
 		max-width: 1360px;
 	}
 	html {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	h1 {
 		font-size: 3.5rem;
 	}
 }
-
 /* Extra Large desktops (1726px and up) */
 @media (min-width: 1726px) {
 	.container {
 		max-width: 1635px;
 	}
 	html {
-		font-size: 21px;
+		font-size: 20px;
 	}
 	h1 {
 		font-size: 4rem;
 	}
 }
-
 /* Row */
 .row {
 	display: flex;
@@ -159,40 +167,4 @@ p {
 	flex: 1; /* Equal width columns */
 }
 
-/* Specific column widths */
-.col-1 {
-	flex: 0 0 8.33%;
-}
-.col-2 {
-	flex: 0 0 16.66%;
-}
-.col-3 {
-	flex: 0 0 25%;
-}
-.col-4 {
-	flex: 0 0 33.33%;
-}
-.col-5 {
-	flex: 0 0 41.66%;
-}
-.col-6 {
-	flex: 0 0 50%;
-}
-.col-7 {
-	flex: 0 0 58.33%;
-}
-.col-8 {
-	flex: 0 0 66.66%;
-}
-.col-9 {
-	flex: 0 0 75%;
-}
-.col-10 {
-	flex: 0 0 83.33%;
-}
-.col-11 {
-	flex: 0 0 91.66%;
-}
-.col-12 {
-	flex: 0 0 100%;
-}
+/*# sourceMappingURL=mystyles.css.map */
