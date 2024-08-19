@@ -29,6 +29,7 @@ h2 {
 	font-weight: 600; /* 600 is semi-bold */
 	font-size: 2.5rem; /* 42px converted to rem */
 	line-height: 1.2;
+	margin-bottom: 1rem;
 }
 
 /* H2 - Subheading */
