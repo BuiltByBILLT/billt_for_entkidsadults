@@ -34,24 +34,29 @@ button {
 .teammate-page {
   min-height: max(600px, 75vh);
   margin-bottom: 5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   gap: 1rem;
 }
 .teammate-page .main-col {
   flex-basis: 75%;
 }
-.teammate-page .main-col .teammate-title {
+.teammate-page .main-col h1.teammate-title {
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 3rem;
 }
-.teammate-page .main-col p:first-of-type {
+.teammate-page .main-col h2 {
+  font-size: 2rem;
+}
+.teammate-page .main-col .portrait {
   float: left;
   margin-right: 2rem;
   margin-bottom: 1rem;
   position: relative;
+  width: 50%;
 }
-.teammate-page .main-col p:first-of-type::before {
+.teammate-page .main-col .portrait::before {
   content: "";
   position: absolute;
   top: 0;
@@ -64,7 +69,8 @@ button {
   background-repeat: no-repeat;
   z-index: 1; /* Place the background behind the image */
 }
-.teammate-page .main-col img.portrait {
+.teammate-page .main-col .portrait img {
+  display: block;
   position: relative;
   z-index: 5; /* Ensures the portrait image is above the background */
   display: block;

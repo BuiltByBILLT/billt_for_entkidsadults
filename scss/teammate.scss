@@ -3,23 +3,28 @@
 .teammate-page {
 	min-height: max(600px, 75vh);
 	margin-bottom: 5rem;
-	padding-top: 2rem;
+	padding-top: 1rem;
 	display: flex;
 	gap: 1rem;
 
 	.main-col {
 		flex-basis: 75%;
 
-		.teammate-title {
+		h1.teammate-title {
 			text-align: center;
 			margin-bottom: 3rem;
+			font-size: 3rem;
+		}
+		h2 {
+			font-size: 2rem;
 		}
 
-		p:first-of-type {
+		.portrait {
 			float: left;
 			margin-right: 2rem;
 			margin-bottom: 1rem;
 			position: relative;
+			width: 50%;
 			&::before {
 				content: "";
 				position: absolute;
@@ -33,12 +38,12 @@
 				background-repeat: no-repeat;
 				z-index: 1; /* Place the background behind the image */
 			}
-		}
-
-		img.portrait {
-			position: relative;
-			z-index: 5; /* Ensures the portrait image is above the background */
-			display: block;
+			img {
+				display: block;
+				position: relative;
+				z-index: 5; /* Ensures the portrait image is above the background */
+				display: block;
+			}
 		}
 
 		p {
