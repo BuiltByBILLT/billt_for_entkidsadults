@@ -1,36 +1,36 @@
 <?php get_header(); ?>
 <main id="content" role="main">
     <?php
-    include(get_template_directory() . '/template-parts/hero-section.php');
+    get_template_part('/template-parts/hero-section');
     ?>
 
     <div id="container" class="container">
         <?php
-        include(get_template_directory() . '/template-parts/learn-more-section.php');
+        get_template_part('/template-parts/learn-more-section');
         ?>
         <?php
-        include(get_template_directory() . '/template-parts/why-us-section.php');
+        get_template_part('/template-parts/why-us-section');
         ?>
         <?php
-        include(get_template_directory() . '/template-parts/announcements-section.php');
+        get_template_part('/template-parts/announcements-section');
         ?>
         <?php
-        include(get_template_directory() . '/template-parts/our-team-section.php');
+        get_template_part('/template-parts/our-team-section');
         ?>
         <div class="row">
             <div class="col">
                 <?php
-                include(get_template_directory() . '/template-parts/book-now-section.php');
+                get_template_part('/template-parts/book-now-section');
                 ?>
             </div>
             <div class="col">
                 <?php
-                include(get_template_directory() . '/template-parts/our-offices-section.php');
+                get_template_part('/template-parts/our-offices-section');
                 ?>
             </div>
         </div>
         <?php
-        include(get_template_directory() . '/template-parts/faq-section.php');
+        get_template_part('/template-parts/faq-section');
         ?>
     </div>
 </main>
