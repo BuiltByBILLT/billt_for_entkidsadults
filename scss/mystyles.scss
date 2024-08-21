@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "variables";
+@import "header";
+@import "footer";
+@import "page";
+@import "front-page";
+@import "teammate";
 *,
 *::before,
 *::after {
@@ -165,6 +170,38 @@ p {
 /* Column */
 .col {
 	flex: 1; /* Equal width columns */
+}
+
+button {
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.primary-button {
+	background: $light-blue;
+	font-size: 1rem;
+	color: $white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.4rem;
+	border: 1px solid $light-blue;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.8;
+		color: white;
+	}
+}
+.outline-button {
+	color: $light-blue;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.5rem 1rem;
+	border-radius: 0.4rem;
+	border: 1px solid $light-blue;
+	text-decoration: none;
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 /*# sourceMappingURL=mystyles.css.map */

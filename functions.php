@@ -10,17 +10,6 @@ function load_css()
 
     wp_register_style('mystyles', get_template_directory_uri() . '/css/mystyles.css', array(), false, 'all');
     wp_enqueue_style('mystyles');
-
-    wp_register_style('header', get_template_directory_uri() . '/css/header.css', array(), false, 'all');
-    wp_enqueue_style('header');
-    wp_register_style('footer', get_template_directory_uri() . '/css/footer.css', array(), false, 'all');
-    wp_enqueue_style('footer');
-    wp_register_style('front-page', get_template_directory_uri() . '/css/front-page.css', array(), false, 'all');
-    wp_enqueue_style('front-page');
-    wp_register_style('page', get_template_directory_uri() . '/css/page.css', array(), false, 'all');
-    wp_enqueue_style('page');
-    wp_register_style('teammate', get_template_directory_uri() . '/css/teammate.css', array(), false, 'all');
-    wp_enqueue_style('teammate');
 }
 add_action('wp_enqueue_scripts', 'load_css');
 
