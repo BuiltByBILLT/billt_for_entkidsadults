@@ -254,8 +254,26 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   padding: 1rem 0;
   margin-bottom: 3rem;
 }
+.page-page > .container {
+  display: flex;
+  gap: 2rem;
+}
+.page-page > .container .main-col {
+  flex-basis: 70%;
+}
+.page-page > .container .sidebar-container {
+  flex-basis: 30%;
+}
 .page-page p {
   margin-bottom: 2rem;
+}
+.page-page ul,
+.page-page ol {
+  list-style-position: inside;
+}
+.page-page ul li,
+.page-page ol li {
+  margin-bottom: 1rem;
 }
 
 .front-page-container .contact-row {
@@ -267,7 +285,7 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   margin-bottom: 5rem;
   padding-top: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .teammate-page .main-col {
   flex-basis: 70%;
@@ -788,7 +806,6 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 
 .sidebar {
   padding: 1rem 2rem;
-  margin-left: 1rem;
   box-shadow: 0px 21px 55px -14px rgba(0, 0, 0, 0.2509803922);
   border-radius: 1rem;
   display: flex;

@@ -11,8 +11,13 @@
                     </div>
                 </h1>
 
-                <div id="container" class="container">
-                    <div><?php the_content(); ?></div>
+                <div class="container">
+                    <div class="main-col">
+                        <div class="the-content"><?php the_content(); ?></div>
+                    </div>
+                    <div class="sidebar-container">
+                        <?php get_template_part("template-parts/sidebar"); ?>
+                    </div>
                 </div>
 
         <?php endwhile;

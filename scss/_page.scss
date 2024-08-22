@@ -12,7 +12,26 @@
 		margin-bottom: 3rem;
 	}
 
+	> .container {
+		display: flex;
+		gap: 2rem;
+		.main-col {
+			flex-basis: 70%;
+		}
+		.sidebar-container {
+			flex-basis: 30%;
+		}
+	}
+
 	p {
 		margin-bottom: 2rem;
+	}
+
+	ul,
+	ol {
+		list-style-position: inside;
+		li {
+			margin-bottom: 1rem;
+		}
 	}
 }
