@@ -102,6 +102,7 @@ header nav ul.top-menu li ul.sub-menu li {
 header nav ul.top-menu li ul.sub-menu li a {
   font-size: 0.8rem;
   text-align: left;
+  display: block;
 }
 header nav ul.top-menu li ul.sub-menu li.menu-item-has-children ul.sub-menu {
   top: 0;
