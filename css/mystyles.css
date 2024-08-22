@@ -815,6 +815,9 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 .sidebar h3 {
   text-align: center;
 }
+.sidebar p {
+  margin-bottom: 0;
+}
 .sidebar section.book-now-section .content {
   padding: 1.5rem 1rem;
 }
