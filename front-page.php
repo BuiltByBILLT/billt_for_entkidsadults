@@ -4,7 +4,7 @@
     get_template_part('/template-parts/hero-section');
     ?>
 
-    <div id="container" class="container">
+    <div id="container" class="container front-page-container">
         <?php
         get_template_part('/template-parts/learn-more-section');
         ?>
@@ -17,7 +17,7 @@
         <?php
         get_template_part('/template-parts/our-team-section');
         ?>
-        <div class="row">
+        <div class="row contact-row">
             <div class="col">
                 <?php
                 get_template_part('/template-parts/book-now-section');

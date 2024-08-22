@@ -19,8 +19,8 @@ Template Name: Teammate Template
 
                         <div class="the-content"><?php the_content(); ?></div>
                     </div>
-                    <div class="sidebar">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus iure molestiae! Optio architecto velit error consequatur consectetur voluptatibus ipsam accusantium ut! Architecto aspernatur nostrum qui quod numquam incidunt, dolor sed modi officia magni praesentium officiis quia blanditiis expedita enim exercitationem odio iste doloribus? Officiis dolorum voluptatem itaque odio reprehenderit.
+                    <div class="sidebar-container">
+                        <?php get_template_part("template-parts/sidebar"); ?>
                     </div>
 
             <?php endwhile;
