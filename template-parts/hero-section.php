@@ -8,8 +8,8 @@
                     <p>Our practice goal is to improve the health and well-being of our patients and the communities we serve.</p>
                 </div>
                 <div class="row button-row">
-                    <button class="primary-button">Schedule appointment</button>
-                    <button class="outline-button">Our Services</button>
+                    <a href="#book-now" class="primary-button">Schedule appointment</a>
+                    <a href="/ear-nose-throat" class="outline-button">Our Services</a>
                 </div>
                 <div class="row icon-row">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/voted-best-d.png" alt="voted-best-d">

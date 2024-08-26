@@ -162,14 +162,13 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   flex-basis: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
 }
 .footer .footer-container .footer-brand img {
   margin-bottom: 1rem;
   width: fit-content;
 }
 .footer .footer-container .footer-brand p {
-  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 .footer .footer-container .footer-brand .footer-social {
@@ -228,7 +227,11 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 .footer .footer-container .footer-offices .our-offices-section h4 {
   color: white;
 }
-.footer .footer-container .footer-offices .our-offices-section p {
+.footer .footer-container .footer-offices .our-offices-section .details a {
+  color: white;
+}
+.footer .footer-container .footer-offices .our-offices-section .details a:hover {
+  text-decoration: underline;
   color: white;
 }
 .footer .footer-bottom {
@@ -237,10 +240,16 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 2rem;
 }
-.footer .footer-bottom p,
-.footer .footer-bottom span {
+.footer .footer-bottom p {
   margin: 0;
   font-size: 0.8rem;
+}
+.footer .footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+.footer .footer-bottom a:hover {
+  text-decoration: underline;
 }
 
 .page-page {
@@ -278,6 +287,9 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 
 .front-page-container .contact-row {
   gap: 3rem;
+}
+.front-page-container #book-now {
+  scroll-margin: 6rem;
 }
 
 .teammate-page {
@@ -500,7 +512,7 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 .hero .container > .row .col.left-col .text p:first-child {
   margin-bottom: 0.5rem;
 }
-.hero .container > .row .col.left-col .button-row button:first-child {
+.hero .container > .row .col.left-col .button-row .primary-button {
   margin-right: 1rem;
 }
 .hero .container > .row .col.left-col .icon-row {
@@ -797,13 +809,26 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   flex-direction: column;
   gap: 10px;
 }
-.our-offices-section .office .details p {
-  margin: 0;
-  display: flex;
-  align-items: start;
-  color: #555759;
+.our-offices-section .office .details h4 a {
+  color: #102851;
+  text-decoration: none;
 }
-.our-offices-section .office .details p .icon {
+.our-offices-section .office .details h4 a:hover {
+  color: #102851;
+  text-decoration: underline;
+}
+.our-offices-section .office .details .office-icon-row {
+  flex-wrap: nowrap;
+}
+.our-offices-section .office .details .office-icon-row a {
+  color: #555759;
+  text-decoration: none;
+}
+.our-offices-section .office .details .office-icon-row a:hover {
+  color: #102851;
+  text-decoration: underline;
+}
+.our-offices-section .office .details .office-icon-row .icon {
   margin-right: 10px;
   margin-top: 3px;
   width: 20px; /* Adjust width as needed */
@@ -813,13 +838,13 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   background-position: center;
   flex-shrink: 0;
 }
-.our-offices-section .office .details p.phone .icon {
+.our-offices-section .office .details .office-icon-row.phone .icon {
   background-image: url("../assets/images/icon-phone.png");
 }
-.our-offices-section .office .details p.email .icon {
+.our-offices-section .office .details .office-icon-row.email .icon {
   background-image: url("../assets/images/icon-mail.png");
 }
-.our-offices-section .office .details p.address .icon {
+.our-offices-section .office .details .office-icon-row.address .icon {
   background-image: url("../assets/images/icon-pin.png");
 }
 .our-offices-section .office .details h4 {
@@ -981,6 +1006,7 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1142,6 +1168,7 @@ button {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .primary-button {

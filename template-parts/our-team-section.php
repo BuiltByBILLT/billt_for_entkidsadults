@@ -2,7 +2,7 @@
     <h5>Our Team</h5>
     <h2>Meet Our Medical Specialist</h2>
     <div class="team-cards">
-        <a href="/dr-michael-kubala" class="team-card">
+        <a href="/us/michael-e-kubala-md" class="team-card">
             <div class="card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr-kubala.png" alt="Dr. Michael Kubala">
             </div>
@@ -11,7 +11,7 @@
             <p>Head and Neck Surgery</p>
             <p class="learn-more">Learn More ></p>
         </a>
-        <a href="/dr-brad-gamble" class="team-card">
+        <a href="/us/bradford-gamble-md" class="team-card">
             <div class="card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr-gamble.png" alt="Dr. Brad Gamble">
             </div>
@@ -20,7 +20,7 @@
             <p>Head and Neck Surgery</p>
             <p class="learn-more">Learn More ></p>
         </a>
-        <a href="/maria-chapman" class="team-card">
+        <a href="/us/maria-s-chapman-rn-bsn-cpn" class="team-card">
             <div class="card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/maria-chapman.png" alt="Maria S. Chapman">
             </div>
@@ -28,7 +28,7 @@
             <p>Practice Manager</p>
             <p class="learn-more">Learn More ></p>
         </a>
-        <a href="/dr-beth-bernthal" class="team-card">
+        <a href="/us" class="team-card">
             <div class="card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr-bernthal.png" alt="Dr. Beth Bernthal">
             </div>
