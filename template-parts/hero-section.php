@@ -20,5 +20,5 @@
             </div>
         </div>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Dr-Gambe-Dr-Kubala.png" alt="Dr-Gambe-Dr-Kubala">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Hero-Dr-Gambe-Dr-Kubala.png" alt="Dr-Gambe-Dr-Kubala">
 </section>
