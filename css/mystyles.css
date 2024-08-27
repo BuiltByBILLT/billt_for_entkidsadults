@@ -295,6 +295,7 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 .single-page {
   padding: 2rem 0 4rem;
   max-width: 800px !important;
+  min-height: 50vh;
 }
 
 h1 {
