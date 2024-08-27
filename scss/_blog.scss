@@ -1,0 +1,51 @@
+h1 {
+	text-align: center;
+}
+.blog-list {
+	width: 80%;
+	max-width: 1000px;
+	margin: 0 auto 4rem;
+	.post {
+		margin: 2rem 0;
+		padding: 2rem;
+		border-radius: 5px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	}
+	h2 a {
+		font-size: 2rem;
+		text-decoration: none;
+		color: $light-blue;
+		&:hover {
+			color: $light-blue;
+			text-decoration: underline;
+		}
+	}
+	nav {
+		flex-grow: 1;
+		.nav-links {
+			display: flex;
+			.nav-previous {
+				//older posts
+				order: 2;
+				margin-left: auto;
+			}
+			.nav-next {
+				// newer posts
+				order: 1;
+			}
+
+			a {
+				color: $light-blue;
+				font-size: 1rem;
+				font-weight: 400;
+				padding: 0.5rem 1rem;
+				border-radius: 0.4rem;
+				border: 1px solid $light-blue;
+				text-decoration: none;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

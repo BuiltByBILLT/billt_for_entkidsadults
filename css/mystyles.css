@@ -297,6 +297,56 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   max-width: 800px !important;
 }
 
+h1 {
+  text-align: center;
+}
+
+.blog-list {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+}
+.blog-list .post {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.blog-list h2 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #2aa7ff;
+}
+.blog-list h2 a:hover {
+  color: #2aa7ff;
+  text-decoration: underline;
+}
+.blog-list nav {
+  flex-grow: 1;
+}
+.blog-list nav .nav-links {
+  display: flex;
+}
+.blog-list nav .nav-links .nav-previous {
+  order: 2;
+  margin-left: auto;
+}
+.blog-list nav .nav-links .nav-next {
+  order: 1;
+}
+.blog-list nav .nav-links a {
+  color: #2aa7ff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #2aa7ff;
+  text-decoration: none;
+}
+.blog-list nav .nav-links a:hover {
+  opacity: 0.8;
+}
+
 .teammate-page {
   min-height: max(600px, 75vh);
   margin-bottom: 5rem;
