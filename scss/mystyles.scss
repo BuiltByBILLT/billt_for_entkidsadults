@@ -4,6 +4,7 @@
 @import "footer";
 @import "page";
 @import "front-page";
+@import "single";
 @import "teammate";
 @import "our-team-page";
 @import "template-parts";
@@ -31,8 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 0.1rem;
-	margin-bottom: 0.5rem;
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
 	color: $dark-blue;
 }
 
@@ -75,6 +76,7 @@ h5 {
 	font-size: 1.353rem; /* 23px converted to rem */
 	color: $light-blue;
 	line-height: 1.2;
+	margin-bottom: 0em;
 }
 
 /* H6  used for General Menu*/
