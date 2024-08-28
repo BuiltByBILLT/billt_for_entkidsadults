@@ -850,10 +850,13 @@ h1 {
 .our-offices-section .office .map {
   margin-right: 20px;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-basis: 200px;
   flex-shrink: 0;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+.our-offices-section .office .map:hover {
+  transform: scale(1.05); /* Zoom in by 2% */
 }
 .our-offices-section .office .map img {
   width: 100%;
