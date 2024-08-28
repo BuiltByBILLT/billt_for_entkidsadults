@@ -911,6 +911,17 @@ h1 {
   margin-bottom: 5px;
 }
 
+.sidebar section.our-offices-section .office {
+  flex-direction: column;
+}
+.sidebar section.our-offices-section .office:first-of-type {
+  margin-bottom: 3rem;
+}
+.sidebar section.our-offices-section .office .map {
+  flex-basis: 100%;
+  margin-bottom: 0.75rem;
+}
+
 .book-now-section {
   background-image: url("../assets/images/book-now-bg-img.jpg");
   background-size: cover;
@@ -970,6 +981,13 @@ h1 {
   margin-top: 3rem;
   cursor: pointer;
   align-self: center;
+}
+
+.sidebar section.book-now-section .content {
+  padding: 1.5rem 1rem;
+}
+.sidebar section.book-now-section .content input.primary-button {
+  margin-top: 1rem;
 }
 
 .faq-section {
@@ -1037,22 +1055,6 @@ h1 {
 }
 .sidebar p {
   margin-bottom: 0;
-}
-.sidebar section.book-now-section .content {
-  padding: 1.5rem 1rem;
-}
-.sidebar section.book-now-section .content input.primary-button {
-  margin-top: 1rem;
-}
-.sidebar section.our-offices-section .office {
-  flex-direction: column;
-}
-.sidebar section.our-offices-section .office:first-of-type {
-  margin-bottom: 3rem;
-}
-.sidebar section.our-offices-section .office .map {
-  flex-basis: 100%;
-  margin-bottom: 0.25rem;
 }
 
 *,

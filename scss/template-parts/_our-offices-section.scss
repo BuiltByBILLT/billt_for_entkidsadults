@@ -96,3 +96,18 @@
 		}
 	}
 }
+
+.sidebar {
+	section.our-offices-section {
+		.office {
+			flex-direction: column;
+			&:first-of-type {
+				margin-bottom: 3rem;
+			}
+			.map {
+				flex-basis: 100%;
+				margin-bottom: 0.75rem;
+			}
+		}
+	}
+}

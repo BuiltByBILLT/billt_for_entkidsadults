@@ -12,27 +12,4 @@
 	p {
 		margin-bottom: 0;
 	}
-
-	section.book-now-section {
-		.content {
-			padding: 1.5rem 1rem;
-
-			input.primary-button {
-				margin-top: 1rem;
-			}
-		}
-	}
-
-	section.our-offices-section {
-		.office {
-			flex-direction: column;
-			&:first-of-type {
-				margin-bottom: 3rem;
-			}
-			.map {
-				flex-basis: 100%;
-				margin-bottom: 0.25rem;
-			}
-		}
-	}
 }
