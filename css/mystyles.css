@@ -252,10 +252,6 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   text-decoration: underline;
 }
 
-.page-page {
-  min-height: max(600px, 75vh);
-  margin-bottom: 5rem;
-}
 .page-page h1.page-title {
   text-align: center;
   background-color: #102851;
@@ -293,9 +289,8 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 }
 
 .single-page {
-  padding: 2rem 0 4rem;
   max-width: 800px !important;
-  min-height: 50vh;
+  margin-top: 2rem;
 }
 
 h1 {
@@ -349,8 +344,6 @@ h1 {
 }
 
 .teammate-page {
-  min-height: max(600px, 75vh);
-  margin-bottom: 5rem;
   padding-top: 1rem;
   display: flex;
   gap: 2rem;
@@ -1142,12 +1135,14 @@ p {
   /* color: #555759; */
 }
 
+main {
+  padding-bottom: 4rem;
+  min-height: max(600px, 75vh);
+}
+
 /* Base container styles */
 .container {
-  width: 100%;
-  box-sizing: content-box;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  width: 95%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -1155,7 +1150,7 @@ p {
 /* Small devices (phones, 320px and up) */
 @media (min-width: 320px) {
   .container {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 /* Medium small devices (phones, 375px and up) */

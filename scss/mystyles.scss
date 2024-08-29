@@ -94,12 +94,13 @@ p {
 	/* color: #555759; */
 }
 
+main {
+	padding-bottom: 4rem;
+	min-height: max(600px, 75vh);
+}
 /* Base container styles */
 .container {
-	width: 100%;
-	box-sizing: content-box;
-	padding-right: 0.5rem;
-	padding-left: 0.5rem;
+	width: 95%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -107,7 +108,7 @@ p {
 /* Small devices (phones, 320px and up) */
 @media (min-width: 320px) {
 	.container {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 /* Medium small devices (phones, 375px and up) */
