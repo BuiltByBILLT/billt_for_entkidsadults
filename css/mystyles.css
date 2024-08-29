@@ -289,22 +289,37 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
 }
 
 .single-page {
-  max-width: 800px !important;
-  margin-top: 2rem;
+  max-width: 65ch !important;
+}
+
+h1.title {
+  text-align: center;
+  background-color: #102851;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
 }
 
 h1 {
   text-align: center;
 }
 
+h1.title {
+  text-align: center;
+  background-color: #102851;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+}
+
 .blog-list {
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 .blog-list .post {
-  margin: 2rem 0;
-  padding: 2rem;
+  padding: 5vw;
   border-radius: 5px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -318,10 +333,11 @@ h1 {
   text-decoration: underline;
 }
 .blog-list nav {
-  flex-grow: 1;
+  width: 100%;
 }
 .blog-list nav .nav-links {
   display: flex;
+  justify-content: center;
 }
 .blog-list nav .nav-links .nav-previous {
   order: 2;
@@ -331,6 +347,7 @@ h1 {
   order: 1;
 }
 .blog-list nav .nav-links a {
+  display: block;
   color: #2aa7ff;
   font-size: 1rem;
   font-weight: 400;
@@ -584,9 +601,6 @@ h1 {
   object-position: 40% center;
 }
 
-.learn-more-section {
-  padding: 8rem 0;
-}
 .learn-more-section .row {
   display: flex;
   justify-content: space-between;
@@ -674,7 +688,6 @@ h1 {
 
 .why-us-section {
   text-align: center;
-  padding: 50px 0;
 }
 .why-us-section h2 {
   color: #102851;
@@ -729,10 +742,12 @@ h1 {
 
 .announcements-section {
   background-color: #102851;
-  padding: 2rem 4rem;
+  padding: 2rem 0;
   border-radius: 10px;
-  text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .announcements-section h5 {
   color: #2aa7ff;
@@ -742,7 +757,6 @@ h1 {
   margin-bottom: 1.5rem;
 }
 .announcements-section .announcement-content {
-  margin-bottom: 20px;
   line-height: 1.6;
 }
 .announcements-section .announcement-content .read-more {
@@ -758,9 +772,6 @@ h1 {
   margin-top: 2rem;
 }
 
-.our-team-section {
-  padding: 50px 0;
-}
 .our-team-section h5 {
   text-align: center;
 }
@@ -821,7 +832,6 @@ h1 {
 }
 
 .our-offices-section {
-  container: offices/inline-size;
   padding: 1rem 0;
   color: #102851;
   display: flex;
@@ -983,9 +993,6 @@ h1 {
   margin-top: 1rem;
 }
 
-.faq-section {
-  margin: 6rem 0;
-}
 .faq-section h5 {
   text-align: center;
 }
@@ -1133,11 +1140,16 @@ p {
   font-weight: normal;
   font-size: 1rem;
   /* color: #555759; */
+  max-width: 65ch;
 }
 
 main {
-  padding-bottom: 4rem;
+  margin-bottom: 5rem;
   min-height: max(600px, 75vh);
+}
+
+section {
+  margin-bottom: 5rem;
 }
 
 /* Base container styles */
@@ -1229,6 +1241,7 @@ button {
 }
 
 .primary-button {
+  display: block;
   background: #2aa7ff;
   font-size: 1rem;
   color: white;

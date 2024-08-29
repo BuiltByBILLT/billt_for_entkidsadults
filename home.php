@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<main id="content" role="main" class="container">
-    <h1>Announcements</h1>
-    <div class="blog-list">
+<main id="content" role="main">
+    <h1 class="title">Announcements</h1>
+    <div class="blog-list container">
         <?php if (have_posts()) : ?>
 
             <?php while (have_posts()) : the_post(); ?>

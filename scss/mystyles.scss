@@ -92,11 +92,15 @@ p {
 	font-weight: normal;
 	font-size: 1rem;
 	/* color: #555759; */
+	max-width: 65ch;
 }
 
 main {
-	padding-bottom: 4rem;
+	margin-bottom: 5rem;
 	min-height: max(600px, 75vh);
+}
+section {
+	margin-bottom: 5rem;
 }
 /* Base container styles */
 .container {
@@ -187,6 +191,7 @@ button {
 }
 
 .primary-button {
+	display: block;
 	background: $light-blue;
 	font-size: 1rem;
 	color: $white;

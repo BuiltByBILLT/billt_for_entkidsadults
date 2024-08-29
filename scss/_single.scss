@@ -1,4 +1,10 @@
 .single-page {
-	max-width: 800px !important;
-	margin-top: 2rem;
+	max-width: 65ch !important;
+}
+h1.title {
+	text-align: center;
+	background-color: $dark-blue;
+	color: $white;
+	padding: 1rem 0;
+	margin-bottom: 3rem;
 }

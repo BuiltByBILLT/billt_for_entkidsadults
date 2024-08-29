@@ -1,13 +1,21 @@
 h1 {
 	text-align: center;
 }
+h1.title {
+	text-align: center;
+	background-color: $dark-blue;
+	color: $white;
+	padding: 1rem 0;
+	margin-bottom: 3rem;
+}
+
 .blog-list {
-	width: 80%;
-	max-width: 1000px;
-	margin: 0 auto 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
 	.post {
-		margin: 2rem 0;
-		padding: 2rem;
+		padding: 5vw;
 		border-radius: 5px;
 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	}
@@ -21,9 +29,13 @@ h1 {
 		}
 	}
 	nav {
-		flex-grow: 1;
+		// flex-grow: 1;
+		// max-width: 65ch;
+		width: 100%;
 		.nav-links {
 			display: flex;
+			justify-content: center;
+			// gap: 30vw;
 			.nav-previous {
 				//older posts
 				order: 2;
@@ -35,6 +47,7 @@ h1 {
 			}
 
 			a {
+				display: block;
 				color: $light-blue;
 				font-size: 1rem;
 				font-weight: 400;
