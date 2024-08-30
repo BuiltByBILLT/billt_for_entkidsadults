@@ -1,4 +1,4 @@
-<section class="book-now-section" id="book-now">
+<div class="book-now-section" id="book-now">
     <div class="content">
         <h5>Schedule Now</h5>
         <h2>Book An Appointment</h2>
@@ -10,4 +10,4 @@
             <input type="submit" value="Submit" class="primary-button">
         </form>
     </div>
-</section>
+</div>

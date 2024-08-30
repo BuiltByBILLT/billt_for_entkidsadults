@@ -1,62 +1,64 @@
-h1 {
-	text-align: center;
-}
-h1.title {
-	text-align: center;
-	background-color: $dark-blue;
-	color: $white;
-	padding: 1rem 0;
-	margin-bottom: 3rem;
-}
-
-.blog-list {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-	justify-content: center;
-	.post {
-		padding: 5vw;
-		border-radius: 5px;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.blog-page {
+	h1 {
+		text-align: center;
 	}
-	h2 a {
-		font-size: 2rem;
-		text-decoration: none;
-		color: $light-blue;
-		&:hover {
-			color: $light-blue;
-			text-decoration: underline;
+	h1.title {
+		text-align: center;
+		background-color: $dark-blue;
+		color: $white;
+		padding: 1rem 0;
+		margin-bottom: 3rem;
+	}
+
+	.blog-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
+		.post {
+			padding: 5vw;
+			border-radius: 5px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 		}
-	}
-	nav {
-		// flex-grow: 1;
-		// max-width: 65ch;
-		width: 100%;
-		.nav-links {
-			display: flex;
-			justify-content: center;
-			// gap: 30vw;
-			.nav-previous {
-				//older posts
-				order: 2;
-				margin-left: auto;
-			}
-			.nav-next {
-				// newer posts
-				order: 1;
-			}
-
-			a {
-				display: block;
+		h2 a {
+			font-size: 2rem;
+			text-decoration: none;
+			color: $light-blue;
+			&:hover {
 				color: $light-blue;
-				font-size: 1rem;
-				font-weight: 400;
-				padding: 0.5rem 1rem;
-				border-radius: 0.4rem;
-				border: 1px solid $light-blue;
-				text-decoration: none;
-				&:hover {
-					opacity: 0.8;
+				text-decoration: underline;
+			}
+		}
+		nav {
+			// flex-grow: 1;
+			// max-width: 65ch;
+			width: 100%;
+			.nav-links {
+				display: flex;
+				justify-content: center;
+				// gap: 30vw;
+				.nav-previous {
+					//older posts
+					order: 2;
+					margin-left: auto;
+				}
+				.nav-next {
+					// newer posts
+					order: 1;
+				}
+
+				a {
+					display: block;
+					color: $light-blue;
+					font-size: 1rem;
+					font-weight: 400;
+					padding: 0.5rem 1rem;
+					border-radius: 0.4rem;
+					border: 1px solid $light-blue;
+					text-decoration: none;
+					&:hover {
+						opacity: 0.8;
+					}
 				}
 			}
 		}

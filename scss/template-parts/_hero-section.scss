@@ -13,7 +13,7 @@
 
 			.col.left-col {
 				height: 100%;
-				padding-right: calc(5vw + 1rem);
+				// padding-right: calc(5vw + 1rem);
 				display: flex;
 				flex-direction: column;
 				padding-bottom: 2rem;
@@ -23,6 +23,7 @@
 
 				h1 {
 					color: $dark-blue;
+					margin-bottom: 0;
 					span {
 						color: $light-blue;
 					}

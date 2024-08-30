@@ -1,4 +1,4 @@
-<section class="our-offices-section">
+<div class="our-offices-section">
     <h5>Contact Us</h5>
     <h2>Our Offices</h2>
 
@@ -43,4 +43,4 @@
             </div>
         </div>
     </div>
-</section>
+</div>

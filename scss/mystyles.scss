@@ -9,6 +9,7 @@
 @import "teammate";
 @import "our-team-page";
 @import "template-parts";
+@import "mixins";
 *,
 *::before,
 *::after {
@@ -18,7 +19,7 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: calc(15px + 0.390625vw);
 	scroll-behavior: smooth;
 }
 
@@ -41,8 +42,11 @@ h6 {
 /* H1 */
 h1 {
 	font-weight: 700; /* 700 is bold */
-	font-size: 4rem; /* 84px converted to rem */
+	font-size: 3rem; /* 84px converted to rem */
 	line-height: 1.2;
+	@include for-desktop-up {
+		font-size: 4rem; /* 112px converted to rem */
+	}
 }
 
 /* H2 */
@@ -96,82 +100,21 @@ p {
 }
 
 main {
-	margin-bottom: 5rem;
+	// margin-bottom: 5rem;
 	min-height: max(600px, 75vh);
 }
-section {
-	margin-bottom: 5rem;
+section + section {
+	margin-top: 5rem;
 }
 /* Base container styles */
 .container {
 	width: 95%;
+	width: calc(83vw + 40px); /* 95% @320 & 85% @1920 */
 	margin-right: auto;
 	margin-left: auto;
+	max-width: 1800px;
 }
 
-/* Small devices (phones, 320px and up) */
-@media (min-width: 320px) {
-	.container {
-		max-width: 95%;
-	}
-}
-/* Medium small devices (phones, 375px and up) */
-@media (min-width: 375px) {
-	.container {
-		max-width: 360px;
-	}
-}
-/* Large devices (phones, 425px and up) */
-@media (min-width: 425px) {
-	.container {
-		max-width: 400px;
-	}
-}
-/* Tablets (768px and up) */
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
-	html {
-		font-size: 18px;
-	}
-}
-/* Small desktops and large tablets (1024px and up) */
-@media (min-width: 1024px) {
-	.container {
-		max-width: 960px;
-	}
-	html {
-		font-size: 16px;
-	}
-	h1 {
-		font-size: 3rem;
-	}
-}
-/* Large desktops (1440px and up) */
-@media (min-width: 1440px) {
-	.container {
-		max-width: 1360px;
-	}
-	html {
-		font-size: 18px;
-	}
-	h1 {
-		font-size: 3.5rem;
-	}
-}
-/* Extra Large desktops (1726px and up) */
-@media (min-width: 1726px) {
-	.container {
-		max-width: 1635px;
-	}
-	html {
-		font-size: 20px;
-	}
-	h1 {
-		font-size: 4rem;
-	}
-}
 /* Row */
 .row {
 	display: flex;

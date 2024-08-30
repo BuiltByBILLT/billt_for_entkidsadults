@@ -17,7 +17,7 @@
         <?php
         get_template_part('/template-parts/our-team-section');
         ?>
-        <div class="row  sidebar-row">
+        <section class="row  sidebar-row">
             <div class="col">
                 <?php
                 get_template_part('/template-parts/book-now-section');
@@ -28,7 +28,7 @@
                 get_template_part('/template-parts/our-offices-section');
                 ?>
             </div>
-        </div>
+        </section>
         <?php
         get_template_part('/template-parts/faq-section');
         ?>
