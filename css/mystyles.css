@@ -281,9 +281,6 @@ header nav ul.top-menu > li:nth-last-child(1) > a {
   margin-bottom: 1rem;
 }
 
-.front-page-container .contact-row {
-  gap: 3rem;
-}
 .front-page-container #book-now {
   scroll-margin: 6rem;
 }
@@ -836,7 +833,6 @@ h1.title {
   color: #102851;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .our-offices-section h2 {
   color: #102851;
@@ -846,6 +842,7 @@ h1.title {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 .our-offices-section .office:last-child {
   margin-top: 1rem;
@@ -935,7 +932,6 @@ h1.title {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
 }
 .book-now-section::before {
   content: "";
@@ -1055,6 +1051,10 @@ h1.title {
 }
 .sidebar p {
   margin-bottom: 0;
+}
+
+.sidebar-row {
+  gap: 5vw;
 }
 
 *,

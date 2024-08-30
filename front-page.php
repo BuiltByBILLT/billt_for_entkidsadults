@@ -17,7 +17,7 @@
         <?php
         get_template_part('/template-parts/our-team-section');
         ?>
-        <div class="row contact-row">
+        <div class="row  sidebar-row">
             <div class="col">
                 <?php
                 get_template_part('/template-parts/book-now-section');

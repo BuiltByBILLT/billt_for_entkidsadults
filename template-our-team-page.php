@@ -113,7 +113,7 @@ Template Name: Our Team Page
                 </div>
             </section>
             <section class="contact">
-                <div class="row contact-row">
+                <div class="row sidebar-row">
                     <div class="col">
                         <?php
                         get_template_part('/template-parts/book-now-section');
