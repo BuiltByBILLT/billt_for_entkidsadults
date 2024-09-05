@@ -1,0 +1,111 @@
+.header-spacer {
+	height: $header-height;
+}
+
+header {
+	position: fixed;
+	background: transparent;
+	height: $header-height;
+	box-sizing: content-box;
+	z-index: 999;
+	top: 0;
+	width: 100%;
+
+	transition: background-color 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+	&.scrolled {
+		background: white;
+		box-shadow: 0px 0px 1.5rem 0px $box-shadow;
+		height: $header-height;
+	}
+
+	.logo {
+		margin-left: $responsive-container-margin;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		a {
+			display: block;
+			height: 75%;
+			img {
+				height: 100%;
+				width: auto;
+				border: none;
+				padding: 0;
+			}
+		}
+	}
+	nav {
+		position: fixed;
+		height: 0;
+		width: 100%;
+		opacity: 0;
+		background-color: white;
+		overflow-y: scroll;
+		overscroll-behavior: contain; /* Prevent scroll behind */
+		-webkit-overflow-scrolling: touch;
+		transition: opacity 0.3s ease, height 0.5s ease;
+		ul {
+			list-style-type: none;
+		}
+		li {
+			padding: 0.25rem 0;
+		}
+		a {
+			text-decoration: none;
+			font-size: inherit;
+			color: inherit;
+		}
+		.dropdown-toggle {
+			background: none;
+			border: none;
+			color: inherit;
+			font-size: inherit;
+			cursor: pointer;
+			margin-left: 0.5em;
+			transition: transform 0.3s ease;
+			&.open {
+				transform: rotate(180deg); /* Example: rotate the arrow when the menu is open */
+			}
+		}
+
+		> div {
+			height: 101%;
+
+			> ul {
+				margin: auto 0;
+				width: $responsive-container;
+				margin: auto;
+				min-height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				padding: $header-height;
+
+				> li {
+					text-align: center;
+					font-size: 1.2rem;
+					color: $dark-blue;
+				}
+
+				ul.sub-menu {
+					display: none;
+					padding: 1rem 0;
+					li {
+						font-size: 1rem;
+						color: $grey;
+					}
+					&.open {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	nav.menu-open {
+		opacity: 1;
+		height: calc(100vh - $header-height);
+	}
+}
+header.menu-open {
+	background-color: white;
+}

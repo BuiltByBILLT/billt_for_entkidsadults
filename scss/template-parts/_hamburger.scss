@@ -1,0 +1,44 @@
+/* Base styles for the hamburger menu */
+#hamburger-menu {
+	background: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 24px;
+	width: 30px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	translate: 0 -50%;
+	margin-right: $responsive-container-margin;
+}
+
+#hamburger-menu span {
+	background-color: $dark-blue;
+	height: 3px;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+/* Transform hamburger menu into 'X' when open */
+#hamburger-menu.menu-open span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburger-menu.menu-open span:nth-child(2) {
+	opacity: 0; /* Hide the middle bar */
+}
+
+#hamburger-menu.menu-open span:nth-child(3) {
+	transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Larger Screen Styles (Desktop and Tablet) */
+@include for-desktop-up {
+	/* Hide the hamburger menu on larger screens */
+	#hamburger-menu {
+		display: none;
+	}
+}

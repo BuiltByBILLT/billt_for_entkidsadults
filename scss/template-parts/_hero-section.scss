@@ -7,59 +7,88 @@
 	position: relative;
 
 	.container {
-		height: 100%;
-		> .row {
-			height: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
 
-			.col.left-col {
-				height: 100%;
-				// padding-right: calc(5vw + 1rem);
+		.col.left-col {
+			display: flex;
+			flex-direction: column;
+			padding: 2rem 0;
+
+			h1 {
+				font-size: clamp(2rem, 4vw, 5rem);
+				color: $dark-blue;
+				span {
+					color: $light-blue;
+				}
+			}
+			.text {
+				p + P {
+					margin-top: 0.5em;
+				}
+			}
+			.button-row {
+				margin-top: 1em;
 				display: flex;
-				flex-direction: column;
-				padding-bottom: 2rem;
-				padding-top: 2rem;
-				justify-content: space-between;
-				gap: 2rem;
-
-				h1 {
-					color: $dark-blue;
-					margin-bottom: 0;
-					span {
-						color: $light-blue;
-					}
-				}
-
-				.text {
-					p:first-child {
-						margin-bottom: 0.5rem;
-					}
-				}
-				.button-row {
-					.primary-button {
-						margin-right: 1rem;
-					}
-				}
-
-				.icon-row {
-					padding-top: 2rem;
-					> img {
-						position: static;
-						height: 4rem;
-						width: auto;
-						margin-right: 1rem;
-					}
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 1rem;
+			}
+			.icon-row {
+				display: flex;
+				justify-content: center;
+				margin-top: 2em;
+				gap: 2em;
+				img {
+					height: 4em;
+					width: auto;
 				}
 			}
 		}
 	}
-	img {
-		position: absolute;
-		top: $header-height;
-		left: 50%;
-		height: calc(100% - #{$header-height});
-		width: 50%;
-		max-width: 900px;
-		object-fit: cover;
-		object-position: 40% center;
+
+	@include for-desktop-up {
+		br {
+			display: none;
+		}
+		.container.row {
+			flex-direction: row;
+			text-align: left;
+
+			.col.left-col {
+				order: 1;
+				gap: 2rem;
+
+				.text {
+					margin: 0 1rem;
+				}
+
+				.button-row {
+					justify-content: flex-start;
+					gap: 2rem;
+				}
+				.icon-row {
+					justify-content: flex-start;
+				}
+			}
+			.col.right-col {
+				order: 2;
+				img {
+					margin-top: 0;
+					position: absolute;
+					height: calc(100% - $header-height);
+					left: 50%;
+					max-width: min(50%, 1099px);
+					object-fit: cover;
+					object-position: 42% center;
+				}
+			}
+		}
+	}
+	@include for-phone-only {
+		br {
+			display: none;
+		}
 	}
 }

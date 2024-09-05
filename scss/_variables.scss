@@ -3,5 +3,12 @@ $light-blue: #2aa7ff;
 $white: white;
 $grey: #555759;
 $box-shadow: #0000001c;
-$header-height: 6rem;
-$respadding: calc(8px + 1.5625vw);
+$header-height: 4rem;
+$responsive-padding: calc(8px + 1.5625vw);
+$responsive-container: calc(83vw + 40px); /* 95% @320 & 85% @1920 */
+$responsive-font: calc(15px + 0.4vw);
+$responsive-container-margin: calc((100vw - 83vw - 40px) / 2); /* 95% @320 & 85% @1920 */
+
+// @include for-desktop-up {
+// 	$header-height: 6rem;
+// }

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "mixins";
 @import "variables";
-@import "header";
+@import "header-mobile";
+@import "header-desktop";
 @import "footer";
 @import "page";
 @import "front-page";
@@ -9,7 +11,7 @@
 @import "teammate";
 @import "our-team-page";
 @import "template-parts";
-@import "mixins";
+
 *,
 *::before,
 *::after {
@@ -19,7 +21,7 @@
 }
 
 html {
-	font-size: calc(15px + 0.390625vw);
+	font-size: $responsive-font;
 	scroll-behavior: smooth;
 }
 
@@ -28,13 +30,18 @@ body {
 	color: $grey;
 }
 
+img {
+	max-width: 100%;
+	display: block;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	margin-top: 0.1em;
+	margin-top: 0;
 	margin-bottom: 0.5em;
 	color: $dark-blue;
 }
@@ -44,9 +51,6 @@ h1 {
 	font-weight: 700; /* 700 is bold */
 	font-size: 3rem; /* 84px converted to rem */
 	line-height: 1.2;
-	@include for-desktop-up {
-		font-size: 4rem; /* 112px converted to rem */
-	}
 }
 
 /* H2 */
@@ -92,11 +96,8 @@ h6 {
 
 /* Paragraph */
 p {
-	font-family: "Poppins", sans-serif;
-	font-weight: normal;
-	font-size: 1rem;
-	/* color: #555759; */
 	max-width: 65ch;
+	margin: auto;
 }
 
 main {
@@ -108,8 +109,8 @@ section + section {
 }
 /* Base container styles */
 .container {
-	width: 95%;
-	width: calc(83vw + 40px); /* 95% @320 & 85% @1920 */
+	// width: 95%;
+	width: $responsive-container;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 1800px;
@@ -117,8 +118,7 @@ section + section {
 
 /* Row */
 .row {
-	display: flex;
-	flex-wrap: wrap; /* Allows columns to wrap onto the next line if they exceed the row width */
+	display: block;
 }
 
 /* Column */
@@ -126,15 +126,16 @@ section + section {
 	flex: 1; /* Equal width columns */
 }
 
-button {
-	font-family: "Poppins", sans-serif;
-	font-size: 1rem;
-	font-weight: 400;
-	cursor: pointer;
-}
+// button {
+// 	font-family: "Poppins", sans-serif;
+// 	font-size: 1rem;
+// 	font-weight: 400;
+// 	cursor: pointer;
+// }
 
 .primary-button {
 	display: block;
+	width: fit-content;
 	background: $light-blue;
 	font-size: 1rem;
 	color: $white;
@@ -148,6 +149,8 @@ button {
 	}
 }
 .outline-button {
+	display: block;
+	width: fit-content;
 	color: $light-blue;
 	font-size: 1rem;
 	font-weight: 400;

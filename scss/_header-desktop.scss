@@ -1,0 +1,164 @@
+$header-height: 5rem;
+
+.header-spacer {
+	height: $header-height;
+}
+
+@include for-desktop-up {
+	header {
+		height: $header-height;
+		display: flex;
+		&.scrolled {
+			height: $header-height;
+		}
+		.logo {
+			// height: 100%;
+			flex-shrink: 0;
+			a {
+				height: 66%;
+			}
+		}
+		nav {
+			position: static;
+			flex-grow: 1;
+
+			background-color: transparent;
+			justify-content: center;
+			height: auto;
+			opacity: 1;
+			overflow: visible;
+			width: auto;
+			margin-right: $responsive-container-margin;
+
+			button {
+				display: none;
+			}
+
+			> div {
+				> ul {
+					list-style-type: none;
+					width: auto;
+					margin: 0;
+					padding: 0;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					gap: 0.5rem;
+					align-items: center;
+					> li {
+						padding: 1rem 0.75rem;
+						&:first-child {
+							margin-left: auto;
+						}
+						&:nth-child(2) {
+							margin-left: none;
+						}
+						&:nth-last-child(3) {
+							margin-right: auto;
+						}
+					}
+					li {
+						position: relative;
+						cursor: pointer;
+						&:hover {
+							> a {
+								opacity: 0.5;
+							}
+							> ul.sub-menu {
+								display: block;
+							}
+						}
+						&:focus-within {
+							> a {
+								opacity: 0.5;
+							}
+						}
+						&.current-menu-item,
+						&.current-menu-ancestor,
+						&.current-menu-parent {
+							> a {
+								font-weight: 600;
+								text-decoration: underline;
+							}
+						}
+						> a {
+							color: $dark-blue;
+							font-size: 1rem;
+							text-decoration: none;
+							text-align: center;
+						}
+						ul.sub-menu {
+							display: none;
+							position: absolute;
+							list-style-type: none;
+							background: white;
+							padding: 0.5rem 0;
+							margin: 0;
+							left: -0.25rem;
+							top: 100%;
+							min-width: 9rem;
+							border-radius: 0.5rem;
+							box-shadow: 0px 0px 1.5rem 0px $box-shadow;
+							white-space: nowrap;
+
+							li {
+								position: static;
+								padding: 0.25rem 1rem;
+								a {
+									font-size: 0.8rem;
+									text-align: left;
+									display: block;
+								}
+								&.menu-item-has-children {
+									ul.sub-menu {
+										top: 0;
+										left: 100%;
+									}
+								}
+							}
+						}
+					}
+					// special styles for header buttons
+					> li {
+						&:nth-last-child(2) {
+							padding: 0.5rem 1rem;
+							border-radius: 0.4rem;
+							border: 1px solid $light-blue;
+							> a {
+								color: $light-blue;
+								padding: 0;
+							}
+							&.current-menu-item {
+								> a {
+									font-weight: 400;
+									text-decoration: none;
+								}
+							}
+						}
+						&:nth-last-child(1) {
+							background: $light-blue;
+							padding: 0.5rem 1rem;
+							border-radius: 0.4rem;
+							&:hover {
+								opacity: 0.8;
+								> a {
+									opacity: 1;
+								}
+							}
+							> a {
+								color: $white;
+								padding: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1460px) {
+	#menu-item-1448 {
+		display: none;
+	}
+}

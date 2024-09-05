@@ -24,6 +24,14 @@ function load_js()
     wp_register_script('transparent-header', get_template_directory_uri() . '/js/transparent-header.js', array(), false, true);
     wp_enqueue_script('transparent-header');
 
+    // Hamburger Menu
+    wp_register_script('hamburger', get_template_directory_uri() . '/js/hamburger.js', array(), false, true);
+    wp_enqueue_script('hamburger');
+
+    // Mobile Menu Dropdown
+    wp_register_script('mobile-menu-dropdown', get_template_directory_uri() . '/js/mobile-menu-dropdown.js', array(), false, true);
+    wp_enqueue_script('mobile-menu-dropdown');
+
     // FAQ accordion
     wp_register_script('faq-accordian', get_template_directory_uri() . '/js/faq-accordian.js', array(), false, true);
     wp_enqueue_script('faq-accordian');
@@ -39,8 +47,19 @@ add_theme_support('custom-logo');
 //Menus
 register_nav_menus(
     array(
-        'top-menu' => 'Top Menu',
-        'footer-menu' => 'Footer Menu',
-        'mobile-menu' => 'Mobile Menu'
+        'desktop-header-location' => 'Desktop Header Location',
+        'footer-location' => 'Footer Location',
+        'mobile-header-location' => 'Mobile Header Location'
     )
 );
+
+function add_dropdown_button_to_menu($args, $item, $depth)
+{
+    if (is_array($item->classes) && in_array('menu-item-has-children', $item->classes)) {
+        $args->after = '<button class="dropdown-toggle" aria-expanded="false">▼</button>';
+    } else {
+        $args->after = '';
+    }
+    return $args;
+}
+add_filter('nav_menu_item_args', 'add_dropdown_button_to_menu', 10, 3);
