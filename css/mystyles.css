@@ -51,7 +51,7 @@ header nav ul {
   list-style-type: none;
 }
 header nav li {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
 }
 header nav a {
   text-decoration: none;
@@ -81,7 +81,7 @@ header nav > div > ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 4rem;
+  padding: 0;
 }
 header nav > div > ul > li {
   text-align: center;

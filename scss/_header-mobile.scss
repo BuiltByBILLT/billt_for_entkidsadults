@@ -48,7 +48,7 @@ header {
 			list-style-type: none;
 		}
 		li {
-			padding: 0.25rem 0;
+			padding: 0.5rem 0;
 		}
 		a {
 			text-decoration: none;
@@ -79,7 +79,7 @@ header {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
-				padding: $header-height;
+				padding: 0;
 
 				> li {
 					text-align: center;
