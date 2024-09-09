@@ -339,6 +339,9 @@ header.menu-open {
   .footer .footer-container.row .footer-brand {
     flex-shrink: 1;
   }
+  .footer .footer-container.row .footer-brand img {
+    margin-left: 0;
+  }
   .footer .footer-container.row .footer-links {
     margin-top: 0;
     flex-shrink: 0;
@@ -352,7 +355,10 @@ header.menu-open {
     gap: 0.5rem;
   }
   .footer .footer-container.row .footer-offices .office img {
-    width: 170px;
+    width: calc(160px + 3vw);
+  }
+  .footer .footer-container.row .footer-offices .office h4 {
+    margin-top: 0;
   }
   .footer .footer-bottom br {
     display: none;

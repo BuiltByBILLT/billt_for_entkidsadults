@@ -102,6 +102,9 @@
 
 			.footer-brand {
 				flex-shrink: 1;
+				img {
+					margin-left: 0;
+				}
 			}
 			.footer-links {
 				margin-top: 0;
@@ -114,7 +117,10 @@
 					display: flex;
 					gap: 0.5rem;
 					img {
-						width: 170px;
+						width: calc(160px + 3vw);
+					}
+					h4 {
+						margin-top: 0;
 					}
 				}
 			}
