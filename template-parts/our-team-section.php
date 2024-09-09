@@ -28,13 +28,13 @@
             <p>Practice Manager</p>
             <p class="learn-more">Learn More ></p>
         </a>
-        <a href="/us" class="team-card">
+        <!-- <a href="/us" class="team-card">
             <div class="card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dr-bernthal.png" alt="Dr. Beth Bernthal">
             </div>
             <h4>Dr. Beth Bernthal</h4>
             <p>Clinical Audiologist</p>
             <p class="learn-more">Learn More ></p>
-        </a>
+        </a> -->
     </div>
 </section>
