@@ -18,7 +18,7 @@
             </div>
             <div class="row office-icon-row address">
                 <span class="icon"></span>
-                <a target="_blank" href="https://maps.app.goo.gl/hayWXkhLw9UsAfDz9">6300 W Parker Rd Suite G24, Plano, TX 75093</a>
+                <a target="_blank" href="https://maps.app.goo.gl/hayWXkhLw9UsAfDz9">6300 W Parker Rd Suite G24, <br>Plano, TX 75093</a>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="row office-icon-row address">
                 <span class="icon"></span>
-                <a target="_blank" href="https://maps.app.goo.gl/nYAczHK7GM6B6HBG7">7515 Greenville Ave, Suite 410, Dallas, TX, 75231</a>
+                <a target="_blank" href="https://maps.app.goo.gl/nYAczHK7GM6B6HBG7">7515 Greenville Ave, Suite 410, <br>Dallas, TX, 75231</a>
             </div>
         </div>
     </div>
