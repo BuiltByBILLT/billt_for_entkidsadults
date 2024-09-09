@@ -9,7 +9,6 @@
             <h3>Premium Care</h3>
             <p>
                 Our commitment is to provide you with the highest quality treatment, prioritizing your health and comfort above all else.
-                Experience compassionate service and exceptional outcomes with us.
             </p>
         </div>
         <div class="card">
@@ -18,7 +17,6 @@
             </div>
             <h3>Experts in the field</h3>
             <p>
-                Dr. Greg Rohn, Dr. Brad Gamble, and Dr. Michael Kubala of Otolaryngology Specialists of North Texas (OSNT).
                 Trusted leaders in their field, they bring unparalleled expertise and dedication to your ENT care.
             </p>
         </div>
@@ -28,7 +26,7 @@
             </div>
             <h3>Patient Registration</h3>
             <p>
-                Explore our convenient Patient Registration, Information Links, and Surgery Instructions to streamline your healthcare journey with us.
+                Explore our convenient Patient Registration, Information, and Surgery Instructions to streamline your journey with us.
             </p>
         </div>
         <div class="card">
