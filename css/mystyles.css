@@ -400,6 +400,9 @@ header.menu-open {
 .front-page-container #book-now {
   scroll-margin: 5rem;
 }
+.front-page-container h2 {
+  font-size: clamp(2rem, 3.2vw, 70px);
+}
 
 .single-page {
   max-width: 65ch !important;
@@ -740,68 +743,35 @@ h1.title {
 }
 
 .learn-more-section {
-  margin-top: 5rem;
-}
-.learn-more-section .row {
-  display: flex;
-  justify-content: space-between;
-}
-.learn-more-section .col {
-  flex: 1;
-  position: relative;
-}
-.learn-more-section .col.learn-more-content {
-  flex: 4;
-}
-.learn-more-section .col.learn-more-images {
-  flex: 3;
+  margin-top: 3rem;
 }
 .learn-more-section .learn-more-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  margin-top: 2rem;
 }
 .learn-more-section .learn-more-images img {
-  position: absolute;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
 }
-@media screen and (min-width: 1440px) {
-  .learn-more-section .learn-more-images img {
-    width: 80%;
-  }
-}
-.learn-more-section .learn-more-images img.img-top {
-  top: 0;
-  right: 0;
-}
 .learn-more-section .learn-more-images img.img-bottom {
-  bottom: 0;
-  left: 0;
-}
-.learn-more-section .learn-more-content {
-  padding-left: 3rem;
-  padding-top: 2rem;
+  margin-top: -10%;
+  margin-left: auto;
 }
 .learn-more-section .learn-more-content h2 {
   margin-bottom: 20px;
-  color: #102851;
 }
-.learn-more-section .learn-more-content > p {
+.learn-more-section .learn-more-content p {
   line-height: 1.6;
   margin-bottom: 2rem;
+  margin-left: 0;
 }
-.learn-more-section .learn-more-content .learn-more-goals {
-  display: flex;
-  justify-content: space-between;
+.learn-more-section .learn-more-content .learn-more-goals h2 {
+  margin-bottom: 1rem;
+  color: #102851;
 }
 .learn-more-section .learn-more-content .learn-more-goals .goal,
 .learn-more-section .learn-more-content .learn-more-goals .mission {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  margin-top: 1rem;
 }
 .learn-more-section .learn-more-content .learn-more-goals .goal h3,
 .learn-more-section .learn-more-content .learn-more-goals .mission h3 {
@@ -819,12 +789,72 @@ h1.title {
 }
 .learn-more-section .learn-more-content .learn-more-goals .goal p,
 .learn-more-section .learn-more-content .learn-more-goals .mission p {
-  line-height: 1.6;
+  margin-bottom: 0;
 }
-.learn-more-section .learn-more-content .learn-more-goals .separator {
-  width: 2px;
-  background-color: #ccc;
-  margin: 0 20px;
+@media (min-width: 1200px) {
+  .learn-more-section {
+    margin-top: 5rem;
+  }
+  .learn-more-section .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .learn-more-section .col {
+    position: relative;
+  }
+  .learn-more-section .col.learn-more-content {
+    flex: 4;
+    order: 2;
+  }
+  .learn-more-section .col.learn-more-images {
+    order: 1;
+    flex: 3;
+  }
+  .learn-more-section .learn-more-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .learn-more-section .learn-more-images img {
+    position: absolute;
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1800px) {
+  .learn-more-section .learn-more-images img {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .learn-more-section .learn-more-images img.img-top {
+    top: 0;
+    right: 0;
+  }
+  .learn-more-section .learn-more-images img.img-bottom {
+    bottom: 0;
+    left: 0;
+  }
+  .learn-more-section .learn-more-content {
+    padding-left: 3rem;
+    padding-top: 2rem;
+  }
+  .learn-more-section .learn-more-content .learn-more-goals {
+    display: flex;
+    justify-content: space-between;
+  }
+  .learn-more-section .learn-more-content .learn-more-goals .goal,
+  .learn-more-section .learn-more-content .learn-more-goals .mission {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .learn-more-section .learn-more-content .learn-more-goals .separator {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 20px;
+  }
 }
 
 .why-us-section {
@@ -1274,7 +1304,12 @@ main {
 }
 
 section + section {
-  margin-top: 5rem;
+  margin-top: 3rem;
+}
+@media (min-width: 1200px) {
+  section + section {
+    margin-top: 5rem;
+  }
 }
 
 /* Base container styles */

@@ -105,7 +105,10 @@ main {
 	min-height: max(600px, 75vh);
 }
 section + section {
-	margin-top: 5rem;
+	margin-top: 3rem;
+	@include for-desktop-up {
+		margin-top: 5rem;
+	}
 }
 /* Base container styles */
 .container {

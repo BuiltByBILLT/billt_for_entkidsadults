@@ -1,72 +1,39 @@
 .learn-more-section {
-	margin-top: 5rem;
-	.row {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.col {
-		flex: 1;
-		position: relative;
-	}
-	.col.learn-more-content {
-		flex: 4;
-	}
-	.col.learn-more-images {
-		flex: 3;
-	}
+	margin-top: 3rem;
 
 	.learn-more-images {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-
+		margin-top: 2rem;
 		img {
-			position: absolute;
 			border-radius: 8px;
 			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 			width: 90%;
-			@media screen and (min-width: 1440px) {
-				width: 80%;
-			}
-
-			&.img-top {
-				top: 0;
-				right: 0;
-			}
 
 			&.img-bottom {
-				bottom: 0;
-				left: 0;
-				// transform: translateX(-10%);
+				margin-top: -10%;
+				margin-left: auto;
 			}
 		}
 	}
-
 	.learn-more-content {
-		padding-left: 3rem;
-		padding-top: 2rem;
-
 		h2 {
 			margin-bottom: 20px;
-			color: $dark-blue;
 		}
 
-		> p {
+		p {
 			line-height: 1.6;
 			margin-bottom: 2rem;
+			margin-left: 0;
 		}
 
 		.learn-more-goals {
-			display: flex;
-			justify-content: space-between;
+			h2 {
+				margin-bottom: 1rem;
+				color: $dark-blue;
+			}
 
 			.goal,
 			.mission {
-				flex: 1;
-				display: flex;
-				flex-direction: column;
+				margin-top: 1rem;
 
 				h3 {
 					display: flex;
@@ -83,14 +50,77 @@
 				}
 
 				p {
-					line-height: 1.6;
+					margin-bottom: 0;
 				}
 			}
+		}
+	}
 
-			.separator {
-				width: 2px;
-				background-color: #ccc;
-				margin: 0 20px;
+	@include for-desktop-up {
+		margin-top: 5rem;
+		.row {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.col {
+			position: relative;
+		}
+		.col.learn-more-content {
+			flex: 4;
+			order: 2;
+		}
+		.col.learn-more-images {
+			order: 1;
+			flex: 3;
+		}
+
+		.learn-more-images {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+
+			img {
+				position: absolute;
+				width: 90%;
+				@include for-big-desktop-up {
+					width: 80%;
+				}
+
+				&.img-top {
+					top: 0;
+					right: 0;
+				}
+
+				&.img-bottom {
+					bottom: 0;
+					left: 0;
+				}
+			}
+		}
+
+		.learn-more-content {
+			padding-left: 3rem;
+			padding-top: 2rem;
+
+			.learn-more-goals {
+				display: flex;
+				justify-content: space-between;
+
+				.goal,
+				.mission {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					margin-top: 0;
+				}
+
+				.separator {
+					width: 2px;
+					background-color: #ccc;
+					margin: 0 20px;
+				}
 			}
 		}
 	}
