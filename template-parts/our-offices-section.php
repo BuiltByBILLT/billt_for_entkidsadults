@@ -18,7 +18,7 @@
             </div>
             <div class="row office-icon-row address">
                 <span class="icon"></span>
-                <a target="_blank" href="https://maps.app.goo.gl/hayWXkhLw9UsAfDz9">6300 W Parker Rd Suite G24, <br>Plano, TX 75093</a>
+                <a target="_blank" href="https://maps.app.goo.gl/hayWXkhLw9UsAfDz9">6300 W Parker Rd, Suite G24, <br>Plano, TX 75093</a>
             </div>
         </div>
     </div>

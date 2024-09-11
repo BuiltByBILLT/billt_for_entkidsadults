@@ -403,6 +403,81 @@ header.menu-open {
 .front-page-container h2 {
   font-size: clamp(2rem, 3.2vw, 70px);
 }
+.front-page-container .our-offices-section {
+  margin-top: 3rem;
+}
+.front-page-container .our-offices-section .office .map {
+  flex-shrink: 0;
+}
+.front-page-container .our-offices-section .office .map img {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .front-page-container .our-offices-section .office .map img {
+    max-width: 275px;
+  }
+}
+@media (min-width: 900px) {
+  .front-page-container .our-offices-section .office .map img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .front-page-container .our-offices-section .office .map img {
+    width: clamp(200px, 200px + 1.5vw, 250px);
+  }
+}
+.front-page-container .our-offices-section .office .details {
+  padding: 1rem 0 0 1rem;
+}
+@media (min-width: 1200px) {
+  .front-page-container .our-offices-section .office .details {
+    padding: 0 0 0 1rem;
+  }
+}
+.front-page-container .our-offices-section .office .details h4 {
+  margin-top: 0.5rem;
+}
+.front-page-container .our-offices-section .office .details h4 > a {
+  color: #102851;
+}
+.front-page-container .our-offices-section .office .details a {
+  color: #555759;
+}
+@media (min-width: 1200px) {
+  .front-page-container .our-offices-section .office .details a:hover {
+    color: #102851;
+    text-decoration: underline;
+  }
+}
+.front-page-container .our-offices-section .office .details .office-icon-row {
+  margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+  .front-page-container .our-offices-section .office .details .office-icon-row {
+    margin-top: 0.5rem;
+  }
+}
+.front-page-container .our-offices-section .office .details br {
+  display: none;
+}
+.front-page-container .our-offices-section .office + .office {
+  margin-top: 2rem;
+}
+@media (min-width: 600px) {
+  .front-page-container .office {
+    display: flex;
+  }
+  .front-page-container .office a {
+    text-decoration: none;
+  }
+}
+@media (min-width: 1200px) {
+  .front-page-container .sidebar-row {
+    display: flex;
+    gap: 3vw;
+  }
+}
 
 .single-page {
   max-width: 65ch !important;
