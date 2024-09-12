@@ -96,6 +96,13 @@
 	@include for-desktop-up {
 		text-align: start;
 
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		.footer-container.row {
 			display: flex;
 			gap: max(2rem, 5vw);
