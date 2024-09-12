@@ -1,7 +1,6 @@
 .teammate-page {
 	padding-top: 1rem;
-	display: flex;
-	gap: 2rem;
+	display: block;
 
 	.main-col {
 		flex-basis: 70%;
@@ -48,5 +47,18 @@
 	}
 	.sidebar-container {
 		flex-basis: 30%;
+	}
+}
+
+@include for-desktop-up {
+	.teammate-page {
+		display: flex;
+		gap: 2rem;
+		// .main-col {
+
+		// }
+		// .sidebar-container{
+
+		// }
 	}
 }
