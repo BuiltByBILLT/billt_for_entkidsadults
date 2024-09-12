@@ -56,9 +56,10 @@ h1 {
 /* H2 */
 h2 {
 	font-weight: 600; /* 600 is semi-bold */
-	font-size: 2.5rem; /* 42px converted to rem */
+	// font-size: 2.5rem; /* 42px converted to rem */
 	line-height: 1.2;
 	margin-bottom: 1rem;
+	font-size: clamp(2rem, 3.2vw, 70px);
 }
 
 /* H2 - Subheading */

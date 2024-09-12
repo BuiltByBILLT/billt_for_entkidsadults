@@ -381,15 +381,17 @@ header.menu-open {
   padding: 1rem 0;
   margin-bottom: 3rem;
 }
-.page-page > .container {
-  display: flex;
-  gap: 2rem;
-}
-.page-page > .container .main-col {
-  flex-basis: 70%;
-}
-.page-page > .container .sidebar-container {
-  flex-basis: 30%;
+@media (min-width: 1200px) {
+  .page-page > .container {
+    display: flex;
+    gap: 2rem;
+  }
+  .page-page > .container .main-col {
+    flex-basis: 70%;
+  }
+  .page-page > .container .sidebar-container {
+    flex-basis: 30%;
+  }
 }
 .page-page p {
   margin-bottom: 2rem;
@@ -405,9 +407,6 @@ header.menu-open {
 
 .front-page-container #book-now {
   scroll-margin: 5rem;
-}
-.front-page-container h2 {
-  font-size: clamp(2rem, 3.2vw, 70px);
 }
 
 .single-page {
@@ -1165,25 +1164,72 @@ h1.title {
   padding-top: 1rem;
 }
 
-.sidebar {
-  padding: 1rem 2rem;
-  box-shadow: 0px 21px 55px -14px rgba(0, 0, 0, 0.2509803922);
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 .sidebar h3 {
   text-align: center;
+  display: none;
 }
 .sidebar p {
   margin-bottom: 0;
+  display: none;
+}
+.sidebar .details {
+  padding: 1rem 0 0 1rem;
+}
+@media (min-width: 1200px) {
+  .sidebar .details {
+    padding: 0 0 0 0.25rem;
+  }
+}
+.sidebar .details h4 {
+  margin-top: 0.5rem;
+}
+.sidebar .details h4 > a {
+  color: #102851;
+}
+.sidebar .details a {
+  color: #555759;
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  .sidebar .details a:hover {
+    color: #102851;
+    text-decoration: underline;
+  }
+}
+.sidebar .details .office-icon-row {
+  margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+  .sidebar .details .office-icon-row {
+    margin-top: 0.5rem;
+  }
+}
+.sidebar .details br {
+  display: none;
+}
+.sidebar .our-offices-section {
+  margin-top: 2rem;
+}
+.sidebar .our-offices-section .office + .office {
+  margin-top: 2rem;
 }
 
-.sidebar-row {
-  gap: 5vw;
+@media (min-width: 1200px) {
+  .sidebar {
+    padding: 1rem calc(1vw + 0.25rem);
+    box-shadow: 0px 21px 55px -14px rgba(0, 0, 0, 0.2509803922);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sidebar h3 {
+    display: block;
+  }
+  .sidebar p {
+    display: block;
+  }
 }
-
 .contact-row .col {
   display: flex;
   flex-direction: column;
@@ -1351,9 +1397,9 @@ h1 {
 /* H2 */
 h2 {
   font-weight: 600; /* 600 is semi-bold */
-  font-size: 2.5rem; /* 42px converted to rem */
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-size: clamp(2rem, 3.2vw, 70px);
 }
 
 /* H2 - Subheading */

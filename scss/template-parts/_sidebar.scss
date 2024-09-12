@@ -1,19 +1,66 @@
 .sidebar {
-	padding: 1rem 2rem;
-	box-shadow: 0px 21px 55px -14px #00000040;
-	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-
 	h3 {
 		text-align: center;
+		display: none;
 	}
 	p {
 		margin-bottom: 0;
+		display: none;
+	}
+
+	.details {
+		padding: 1rem 0 0 1rem;
+		@include for-desktop-up {
+			padding: 0 0 0 0.25rem;
+		}
+
+		h4 {
+			margin-top: 0.5rem;
+		}
+		h4 > a {
+			color: $dark-blue;
+		}
+		a {
+			color: $grey;
+			text-decoration: none;
+			@include for-desktop-up {
+				&:hover {
+					color: $dark-blue;
+					text-decoration: underline;
+				}
+			}
+		}
+		.office-icon-row {
+			margin-top: 1rem;
+			@include for-desktop-up {
+				margin-top: 0.5rem;
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+	.our-offices-section {
+		margin-top: 2rem;
+		.office + .office {
+			margin-top: 2rem;
+		}
 	}
 }
+@include for-desktop-up {
+	.sidebar {
+		padding: 1rem calc(1vw + 0.25rem);
+		box-shadow: 0px 21px 55px -14px #00000040;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 
-.sidebar-row {
-	gap: 5vw;
+		h3 {
+			display: block;
+		}
+		p {
+			display: block;
+		}
+	}
 }
