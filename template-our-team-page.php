@@ -112,20 +112,9 @@ Template Name: Our Team Page
                     </a>
                 </div>
             </section>
-            <section class="contact">
-                <div class="row sidebar-row">
-                    <div class="col">
-                        <?php
-                        get_template_part('/template-parts/book-now-section');
-                        ?>
-                    </div>
-                    <div class="col">
-                        <?php
-                        get_template_part('/template-parts/our-offices-section');
-                        ?>
-                    </div>
-                </div>
-            </section>
+            <?php
+            get_template_part('/template-parts/contact-row');
+            ?>
         </div>
     </div>
 </main>
