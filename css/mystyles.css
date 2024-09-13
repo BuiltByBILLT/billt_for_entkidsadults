@@ -1213,7 +1213,7 @@ h1.title {
 }
 @media (min-width: 1200px) {
   .sidebar .map img {
-    width: clamp(200px, 200px + 1.5vw, 250px);
+    max-width: 100%;
   }
 }
 .sidebar .details {

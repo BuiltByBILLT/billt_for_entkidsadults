@@ -18,7 +18,8 @@
 				max-width: 250px;
 			}
 			@include for-desktop-up {
-				width: clamp(200px, 200px + 1.5vw, 250px);
+				// width: clamp(200px, 200px + 1.5vw, 250px);
+				max-width: 100%;
 			}
 		}
 	}
