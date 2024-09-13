@@ -8,11 +8,15 @@
 	}
 
 	> .container {
+		.main-col {
+			margin-bottom: 2rem;
+		}
 		@include for-desktop-up {
 			display: flex;
 			gap: 2rem;
 			.main-col {
 				flex-basis: 70%;
+				margin-bottom: 0;
 			}
 			.sidebar-container {
 				flex-basis: 30%;
