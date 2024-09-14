@@ -51,6 +51,7 @@ h1 {
 	font-weight: 700; /* 700 is bold */
 	font-size: 3rem; /* 84px converted to rem */
 	line-height: 1.2;
+	font-size: clamp(2.5rem, 3.5vw, 3rem);
 }
 
 /* H2 */
@@ -59,7 +60,7 @@ h2 {
 	// font-size: 2.5rem; /* 42px converted to rem */
 	line-height: 1.2;
 	margin-bottom: 1rem;
-	font-size: clamp(2rem, 3.2vw, 70px);
+	font-size: clamp(2rem, 3.2vw, 2.5rem);
 }
 
 /* H2 - Subheading */
@@ -98,7 +99,7 @@ h6 {
 /* Paragraph */
 p {
 	max-width: 65ch;
-	margin: auto;
+	margin: 0 auto;
 }
 
 main {

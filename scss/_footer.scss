@@ -42,35 +42,34 @@
 		.our-offices-section {
 			padding: 0;
 
-			.office {
-				margin-bottom: 2em;
-			}
-			a.map {
-				img {
-					margin: auto;
-				}
-			}
 			h5 {
-				margin-bottom: 1em;
-				color: white;
-			}
-			h4 {
-				margin-top: 0.5em;
-				margin-bottom: 0.5rem;
-				color: white;
+				display: none;
 			}
 			h2 {
 				display: none;
 			}
-			div.details {
-				a {
-					color: white;
+			.office {
+				margin-bottom: 2em;
+				h4 {
+					margin-top: 0.5em;
 					margin-bottom: 0.5rem;
-					width: 100%;
-					// text-decoration: underline;
+					color: white;
 				}
-				span {
-					display: none;
+				a.map {
+					img {
+						margin: auto;
+					}
+				}
+				div.details {
+					a {
+						color: white;
+						margin-bottom: 0.5rem;
+						width: 100%;
+						// text-decoration: underline;
+					}
+					span {
+						display: none;
+					}
 				}
 			}
 		}
@@ -138,8 +137,6 @@
 			}
 			span {
 				display: inline;
-			}
-			p {
 			}
 		}
 	}
