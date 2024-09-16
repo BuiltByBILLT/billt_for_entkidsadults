@@ -5,6 +5,10 @@
 		color: $white;
 		padding: 1rem 0;
 		margin-bottom: 3rem;
+		font-size: clamp(2.5rem, 3.5vw, 3rem);
+	}
+	h1 {
+		font-size: clamp(2rem, 3vw, 2.2rem);
 	}
 
 	> .container {
@@ -17,6 +21,9 @@
 			.main-col {
 				flex-basis: 70%;
 				margin-bottom: 0;
+				h2 {
+					font-size: clamp(1.5rem, 2vw, 2rem);
+				}
 			}
 			.sidebar-container {
 				flex-basis: 30%;

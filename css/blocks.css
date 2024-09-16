@@ -59,6 +59,13 @@ iframe {
 	max-width: 100%;
 }
 
+.wp-block-list ul,
+.wp-block-list ul ul,
+.wp-block-list ul ul ul {
+	padding-top: 1rem;
+	padding-left: 20px;
+}
+
 @media screen and (min-width: 900px) {
 	.alignright {
 		float: right;

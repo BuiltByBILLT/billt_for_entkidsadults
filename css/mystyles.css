@@ -365,6 +365,9 @@ header.menu-open {
   .footer .footer-container.row .footer-offices .office h4 {
     margin-top: 0;
   }
+  .footer .footer-bottom p {
+    margin: auto;
+  }
   .footer .footer-bottom br {
     display: none;
   }
@@ -379,6 +382,10 @@ header.menu-open {
   color: white;
   padding: 1rem 0;
   margin-bottom: 3rem;
+  font-size: clamp(2.5rem, 3.5vw, 3rem);
+}
+.page-page h1 {
+  font-size: clamp(2rem, 3vw, 2.2rem);
 }
 .page-page > .container .main-col {
   margin-bottom: 2rem;
@@ -391,6 +398,9 @@ header.menu-open {
   .page-page > .container .main-col {
     flex-basis: 70%;
     margin-bottom: 0;
+  }
+  .page-page > .container .main-col h2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
   }
   .page-page > .container .sidebar-container {
     flex-basis: 30%;
@@ -1519,6 +1529,15 @@ h6 {
 p {
   max-width: 65ch;
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  p {
+    margin: 0;
+  }
+}
+
+input {
+  font-size: 0.9rem;
 }
 
 main {
