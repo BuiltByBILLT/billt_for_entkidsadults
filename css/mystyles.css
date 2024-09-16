@@ -689,6 +689,10 @@ h1.title {
   .our-team-page section.awards a:hover {
     opacity: 0.8;
   }
+  .our-team-page section.awards p {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .our-team-page section.meet .cards {
     gap: 1rem;
     flex-direction: column;
