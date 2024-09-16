@@ -1220,7 +1220,7 @@ h1.title {
   line-height: 1.6;
 }
 .faq-section .faq-container .faq-item.active .faq-answer {
-  max-height: 200px;
+  max-height: 300px;
   padding-top: 1rem;
 }
 
