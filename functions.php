@@ -47,9 +47,8 @@ add_theme_support('custom-logo');
 //Menus
 register_nav_menus(
     array(
-        'desktop-header-location' => 'Desktop Header Location',
+        'header-location' => 'Header Location',
         'footer-location' => 'Footer Location',
-        'mobile-header-location' => 'Mobile Header Location'
     )
 );
 

@@ -718,6 +718,58 @@ h1.title {
     flex-direction: column;
   }
 }
+.services-page > .container .main-col {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .services-page > .container {
+    display: flex;
+    gap: 2rem;
+  }
+  .services-page > .container .main-col {
+    flex-basis: 70%;
+    margin-bottom: 0;
+  }
+  .services-page > .container .main-col h2 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+  .services-page > .container .sidebar-container {
+    flex-basis: 30%;
+  }
+}
+.services-page h1.page-title {
+  text-align: center;
+  background-color: #102851;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  font-size: clamp(2.5rem, 3.5vw, 3rem);
+}
+.services-page .services-list ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.services-page .services-list li {
+  margin: 10px 0;
+}
+.services-page .services-list li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #102851;
+  transition: color 0.3s;
+}
+.services-page .services-list li a:hover {
+  text-decoration: underline;
+}
+.services-page .services-list ul ul {
+  margin-left: 20px;
+  border-left: 2px solid #2aa7ff;
+  padding-left: 15px;
+}
+.services-page .services-list ul ul li {
+  margin: 5px 0;
+}
+
 .hero {
   background-image: url("../assets/images/hero-background.png");
   background-size: cover;

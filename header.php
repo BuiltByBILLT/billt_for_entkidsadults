@@ -19,7 +19,7 @@
                 ?>
             </div>
             <nav id="menu" role="navigation">
-                <?php wp_nav_menu(array('theme_location' => 'desktop-header-location', 'menu_class' => 'header-menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'header-location', 'menu_class' => 'header-menu')); ?>
             </nav>
             <button id="hamburger-menu" aria-label="Toggle menu">
                 <span></span>
