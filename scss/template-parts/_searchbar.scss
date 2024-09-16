@@ -1,0 +1,59 @@
+.custom-searchform {
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: Arial, sans-serif;
+	@include for-desktop-up {
+		margin-left: 0;
+	}
+}
+
+.custom-search-container {
+	display: flex;
+	align-items: center;
+	background-color: #f5f7fa;
+	border: 1px solid #ccc;
+	border-radius: 0.4rem;
+	padding: 5px 15px;
+	width: 100%;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.custom-search-container input[type="text"] {
+	border: none;
+	background-color: transparent;
+	flex-grow: 1;
+	padding: 10px;
+	outline: none;
+	font-size: 1em;
+	color: $grey;
+	font-family: inherit;
+	position: relative;
+}
+
+.custom-search-container input[type="text"]::placeholder {
+	color: #999;
+}
+
+.custom-search-container button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	margin-left: -30px; /* Keep the icon inside the container */
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -3px; /* Adjust vertical alignment */
+}
+
+.custom-search-container button svg {
+	fill: $grey; /* Use the SCSS $grey variable for color */
+	transition: fill 0.3s;
+}
+
+.custom-search-container button:hover svg {
+	fill: darken($grey, 20%); /* Darken the grey on hover */
+	opacity: 0.8;
+}

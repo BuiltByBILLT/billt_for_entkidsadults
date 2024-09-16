@@ -5,6 +5,11 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-white.png" alt="Brand Logo">
             <p>Otolaryngology Specialists of North Texas provides comprehensive care for ear, nose, and throat conditions.</p>
             <p>Our mission is to offer the highest standard of medical services to our patients, combining advanced technology with compassionate care.</p>
+            <div class="search">
+                <h4>Keyword Search</h4>
+                <?php get_template_part('template-parts/searchbar'); ?>
+            </div>
+
         </div>
 
         <div class="footer-links">

@@ -1,0 +1,45 @@
+.search-page {
+	h1.page-title {
+		text-align: center;
+		background-color: $dark-blue;
+		color: $white;
+		padding: 1rem 0;
+		margin-bottom: 3rem;
+		font-size: clamp(2.5rem, 3.5vw, 3rem);
+	}
+	.search-results-container {
+		max-width: 800px;
+		margin: 0 auto;
+		font-family: Arial, sans-serif;
+	}
+
+	.search-results-container h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.search-results-list {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	.search-results-list li {
+		margin-bottom: 20px;
+	}
+
+	.search-results-list a {
+		font-size: 1.5em;
+		text-decoration: none;
+		color: $dark-blue;
+	}
+
+	.search-results-list a:hover {
+		text-decoration: underline;
+	}
+
+	.search-results-list p {
+		margin-top: 5px;
+		font-size: 1em;
+		color: $grey;
+	}
+}

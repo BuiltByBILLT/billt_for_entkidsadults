@@ -260,7 +260,11 @@ header.menu-open {
 }
 .footer .footer-brand p {
   font-size: 0.9rem;
-  margin-top: 2em;
+  margin-top: 1.5em;
+}
+.footer .footer-brand h4 {
+  margin-top: 1.5em;
+  color: white;
 }
 .footer .footer-links {
   margin-top: 4em;
@@ -292,9 +296,6 @@ header.menu-open {
 .footer .footer-offices .our-offices-section h2 {
   display: none;
 }
-.footer .footer-offices .our-offices-section .office {
-  margin-bottom: 2em;
-}
 .footer .footer-offices .our-offices-section .office h4 {
   margin-top: 0.5em;
   margin-bottom: 0.5rem;
@@ -310,6 +311,9 @@ header.menu-open {
 }
 .footer .footer-offices .our-offices-section .office div.details span {
   display: none;
+}
+.footer .footer-offices .our-offices-section .office + .office {
+  margin-top: 2rem;
 }
 .footer .footer-bottom {
   text-align: center;
@@ -343,9 +347,14 @@ header.menu-open {
   }
   .footer .footer-container.row .footer-brand {
     flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
   }
   .footer .footer-container.row .footer-brand img {
     margin-left: 0;
+  }
+  .footer .footer-container.row .footer-brand .search {
+    margin-top: auto;
   }
   .footer .footer-container.row .footer-links {
     margin-top: 0;
@@ -768,6 +777,44 @@ h1.title {
 }
 .services-page .services-list ul ul li {
   margin: 5px 0;
+}
+
+.search-page h1.page-title {
+  text-align: center;
+  background-color: #102851;
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  font-size: clamp(2.5rem, 3.5vw, 3rem);
+}
+.search-page .search-results-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.search-page .search-results-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-page .search-results-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.search-page .search-results-list li {
+  margin-bottom: 20px;
+}
+.search-page .search-results-list a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #102851;
+}
+.search-page .search-results-list a:hover {
+  text-decoration: underline;
+}
+.search-page .search-results-list p {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #555759;
 }
 
 .hero {
@@ -1494,6 +1541,68 @@ h1.title {
     display: none;
   }
 }
+.custom-searchform {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+@media (min-width: 1200px) {
+  .custom-searchform {
+    margin-left: 0;
+  }
+}
+
+.custom-search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f5f7fa;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  padding: 5px 15px;
+  width: 100%;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.custom-search-container input[type=text] {
+  border: none;
+  background-color: transparent;
+  flex-grow: 1;
+  padding: 10px;
+  outline: none;
+  font-size: 1em;
+  color: #555759;
+  font-family: inherit;
+  position: relative;
+}
+
+.custom-search-container input[type=text]::placeholder {
+  color: #999;
+}
+
+.custom-search-container button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: -30px; /* Keep the icon inside the container */
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px; /* Adjust vertical alignment */
+}
+
+.custom-search-container button svg {
+  fill: #555759; /* Use the SCSS $grey variable for color */
+  transition: fill 0.3s;
+}
+
+.custom-search-container button:hover svg {
+  fill: #232425; /* Darken the grey on hover */
+  opacity: 0.8;
+}
+
 *,
 *::before,
 *::after {

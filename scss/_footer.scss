@@ -12,7 +12,11 @@
 		}
 		p {
 			font-size: 0.9rem;
-			margin-top: 2em;
+			margin-top: 1.5em;
+		}
+		h4 {
+			margin-top: 1.5em;
+			color: $white;
 		}
 	}
 
@@ -49,7 +53,6 @@
 				display: none;
 			}
 			.office {
-				margin-bottom: 2em;
 				h4 {
 					margin-top: 0.5em;
 					margin-bottom: 0.5rem;
@@ -71,6 +74,9 @@
 						display: none;
 					}
 				}
+			}
+			.office + .office {
+				margin-top: 2rem;
 			}
 		}
 	}
@@ -108,8 +114,13 @@
 
 			.footer-brand {
 				flex-shrink: 1;
+				display: flex;
+				flex-direction: column;
 				img {
 					margin-left: 0;
+				}
+				.search {
+					margin-top: auto;
 				}
 			}
 			.footer-links {
