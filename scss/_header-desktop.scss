@@ -157,7 +157,7 @@ $header-height: 5rem;
 	}
 }
 
-@media (max-width: 1460px) {
+@media (min-width: 1201px) and (max-width: 1460px) {
 	#menu-item-1448 {
 		display: none;
 	}
