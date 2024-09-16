@@ -1020,9 +1020,9 @@ h1.title {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5vw 1vw;
 }
 .our-team-section .team-cards .team-card {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
