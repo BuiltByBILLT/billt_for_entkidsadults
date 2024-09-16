@@ -4,11 +4,8 @@
         <div class="col learn-more-content">
             <h5>Learn More About</h5>
             <h2>Otolaryngology Specialists of North Texas</h2>
-            <p>
-                Dr. Brad Gamble, and Dr. Michael Kubala of Otolaryngology Specialists of North Texas (OSNT),
-                practice ear, nose, throat, and sinus medical and surgical care for children and adults. Dr. Rohn and Dr. Gamble
-                are board certified Otolaryngology (ENT)-Head and Neck surgeons with offices in Plano and Dallas, Texas.
-            </p>
+            <p>Otolaryngology Specialists of North Texas are committed to providing outstanding service to our patients and referring physicians. Dr. Gamble is a board certified Otolaryngology (ENT)-Head and Neck surgeons with offices in Plano and Dallas, Texas.</p>
+
             <div class="learn-more-goals">
                 <div class="mission">
                     <h3><img src="<?php echo get_template_directory_uri(); ?>/assets/images/check-icon.png" alt="Checkmark" class="check-icon">Our Mission</h3>

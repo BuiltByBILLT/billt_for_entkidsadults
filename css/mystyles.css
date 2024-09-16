@@ -878,8 +878,11 @@ h1.title {
     order: 1;
     gap: 2rem;
   }
+  .hero .container.row .col.left-col h1 {
+    margin-bottom: 0;
+  }
   .hero .container.row .col.left-col .text {
-    margin: 0 1rem;
+    margin-right: 2vw;
   }
   .hero .container.row .col.left-col .button-row {
     justify-content: flex-start;
@@ -1038,7 +1041,7 @@ h1.title {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2vw;
 }
 .why-us-section .cards .card {
   flex: 1;
@@ -1123,6 +1126,7 @@ h1.title {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 2px;
 }
 .our-team-section .team-cards .team-card {
   padding: 1rem;

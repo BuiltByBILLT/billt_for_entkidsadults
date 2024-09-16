@@ -6,8 +6,10 @@
         <div class="col left-col">
             <h1>Expert Care For Your <br><span>Ear</span>, <span>Nose</span> & <span>Throat</span> Health</h1>
             <div class="text">
-                <p>Otolaryngology Specialists of North Texas are committed to providing outstanding service to our patients and referring physicians.</p>
-                <p>Our practice goal is to improve the health and well-being of our patients and the communities we serve.</p>
+                <p>
+                    Dr. Brad Gamble, and Dr. Michael Kubala of Otolaryngology Specialists of North Texas (OSNT),
+                    practice ear, nose, throat, and sinus medical and surgical care for children and adults.
+                </p>
             </div>
             <div class="row button-row">
                 <a href="#book-now" class="primary-button">Schedule appointment</a>
