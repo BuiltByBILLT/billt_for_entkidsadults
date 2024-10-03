@@ -74,22 +74,23 @@ h2 {
 /* H3 */
 h3 {
 	font-weight: 500; /* 500 is medium */
-	font-size: 1.3rem; /* 24px converted to rem */
+	font-size: 1.7rem; /* 24px converted to rem */
+	margin-top: 1em;
 }
 
 /* H4 */
 h4 {
 	font-weight: 500; /* 500 is medium */
-	font-size: 1.059rem; /* 18px converted to rem */
+	font-size: 1.4rem; /* 23px converted to rem */
 }
 
 /* H5 */
 h5 {
 	font-weight: 400; /* 400 is normal */
-	font-size: 1.353rem; /* 23px converted to rem */
+	font-size: 1.4rem; /* 18px converted to rem */
 	color: $light-blue;
 	line-height: 1.2;
-	margin-bottom: 0em;
+	margin: 1em 0 0.5em;
 }
 
 /* H6  used for General Menu*/

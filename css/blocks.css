@@ -61,13 +61,11 @@ iframe {
 
 .wp-block-list ul,
 .wp-block-list ul ul,
-.wp-block-list ul ul ul {
-	padding-top: 1rem;
-	padding-left: 20px;
-}
+.wp-block-list ul ul ul,
 .wsp-pages-list ul,
 .wsp-pages-list ul ul,
-.wsp-pages-list ul ul ul {
+.wsp-pages-list ul ul ul,
+.wsp-posts-list ul {
 	padding-top: 1rem;
 	padding-left: 20px;
 }
