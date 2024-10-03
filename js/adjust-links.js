@@ -7,12 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	links.forEach(function (link) {
 		const linkHostname = new URL(link.href).hostname
 
-		if (hostname !== "www.entkidsadults.com" && linkHostname === "www.entkidsadults.com") {
-			// Convert to relative URL
+		if (hostname !== "entkidsadults.com" && linkHostname === "entkidsadults.com") {
+			console.log("coverted", link.href)
+			link.href = link.href.replace("http://entkidsadults.com", "")
+			link.href = link.href.replace("https://entkidsadults.com", "")
+		}
+		if (hostname !== "entkidsadults.com" && linkHostname === "www.entkidsadults.com") {
+			console.log("coverted", link.href)
+			link.href = link.href.replace("http://www.entkidsadults.com", "")
 			link.href = link.href.replace("https://www.entkidsadults.com", "")
-		} else if (hostname === "www.entkidsadults.com" && linkHostname !== "www.entkidsadults.com") {
-			// Ensure it remains an absolute URL
-			link.href = "https://www.entkidsadults.com" + link.pathname
 		}
 	})
 })
