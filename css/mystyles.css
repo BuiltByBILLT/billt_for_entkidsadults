@@ -547,7 +547,7 @@ h1.title {
     float: left;
     margin-right: 2rem;
     margin-bottom: 1rem;
-    width: 45%;
+    max-width: 45%;
   }
 }
 @media (min-width: 1200px) {
