@@ -115,6 +115,63 @@ Template Name: Our Team Page
                             </a>
                         </div>
                     </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mary-c-gamble.png" alt="Doctor examining patient" class="">
+                        </div>
+                        <div class="content">
+                            <div class="row title-row">
+                                <h3>Mary C. Gamble</h3>
+                                <p>M.A., C.C.C.A.</p>
+                            </div>
+                            <p>Mary Gamble grew up in Iowa and attended Maquoketa Valley High School where she graduated as valedictorian. She attended the University of Iowa, where she obtained her BA in Speech and Hearing Sciences with honors...</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="/us/mary-c-gamble-audiologist/">
+                                <button class="primary-button">
+                                    Learn More >
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/spencer-pevahouse.png" alt="Doctor examining patient" class="">
+                        </div>
+                        <div class="content">
+                            <div class="row title-row">
+                                <h3>Spencer Pevahouse</h3>
+                                <p>Clinical Audiologist</p>
+                            </div>
+                            <p>Spencer Pevahouse earned her Bachelor of Science degree in Communication Sciences and Disorders from Texas Christian University and completed her Doctorate in Audiology at the University of Texas at Dallas. Dr. Pevahouse is licensed...</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="/us/spencer-pevahouse-audiologist/">
+                                <button class="primary-button">
+                                    Learn More >
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/abbey-landry.png" alt="Doctor examining patient" class="">
+                        </div>
+                        <div class="content">
+                            <div class="row title-row">
+                                <h3>Abbey Landry</h3>
+                                <p>Clinical Audiologist</p>
+                            </div>
+                            <p>Dr. Abigail ‘Abbey’ Landry was born and raised in Lake Charles, Louisiana. She obtained her Bachelors of Arts in Communication Sciences and Disorders at Louisiana State University in Baton Rouge, Louisiana. She then earned her Doctorate...</p>
+                        </div>
+                        <div class="buttons">
+                            <a href="/us/abbey-landry-aud/">
+                                <button class="primary-button">
+                                    Learn More >
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <?php
