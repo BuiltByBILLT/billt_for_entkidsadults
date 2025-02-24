@@ -103,7 +103,7 @@ header {
 	}
 	nav.menu-open {
 		opacity: 1;
-		height: calc(100vh - $header-height);
+		height: calc(100dvh - $header-height);
 	}
 }
 header.menu-open {
