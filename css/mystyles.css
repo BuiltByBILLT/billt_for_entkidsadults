@@ -101,7 +101,7 @@ header nav > div > ul ul.sub-menu.open {
 }
 header nav.menu-open {
   opacity: 1;
-  height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
 }
 
 header.menu-open {

@@ -13,10 +13,6 @@
                     <span class="icon"></span>
                     <a target="_blank" href="tel:+19723780633">+1 972-378-0633</a>
                 </div>
-                <div class="row office-icon-row email">
-                    <span class="icon"></span>
-                    <a target="_blank" href="mailto:mariac@entkidsadults.com">mariac@entkidsadults.com</a>
-                </div>
                 <div class="row office-icon-row address">
                     <span class="icon"></span>
                     <a target="_blank" href="https://maps.app.goo.gl/hayWXkhLw9UsAfDz9">6300 W Parker Rd, Suite G24, <br>Plano, TX 75093</a>
@@ -33,10 +29,6 @@
                 <div class="row office-icon-row phone">
                     <span class="icon"></span>
                     <a target="_blank" href="tel:+12142391641">+1 214-239-1641</a>
-                </div>
-                <div class="row office-icon-row email">
-                    <span class="icon"></span>
-                    <a target="_blank" href="mailto:mariac@entkidsadults.com">mariac@entkidsadults.com</a>
                 </div>
                 <div class="row office-icon-row address">
                     <span class="icon"></span>
